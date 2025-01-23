@@ -26,7 +26,7 @@ from enum import Enum
 from typing import TYPE_CHECKING, Iterable, Optional, Set, Type, Union
 
 from pydantic import BaseModel, ConfigDict, Field, SerializeAsAny, model_validator
-
+import time
 from metagpt.actions import Action, ActionOutput
 from metagpt.actions.action_node import ActionNode
 from metagpt.actions.add_requirement import UserRequirement
@@ -264,6 +264,7 @@ class Role(SerializationMixin, ContextMixin, BaseModel):
             actions: list of Action classes or instances
         """
         self._reset()
+
         for action in actions:
             if not isinstance(action, Action):
                 i = action(context=self.context)
@@ -278,6 +279,7 @@ class Role(SerializationMixin, ContextMixin, BaseModel):
             self._init_action(i)
             self.actions.append(i)
             self.states.append(f"{len(self.actions) - 1}. {action}")
+
 
     def _set_react_mode(self, react_mode: str, max_react_loop: int = 1, auto_run: bool = True):
         """Set strategy of the Role reacting to observed Message. Variation lies in how
@@ -401,6 +403,10 @@ class Role(SerializationMixin, ContextMixin, BaseModel):
 
     async def _act(self) -> Message:
         logger.info(f"{self._setting}: to do {self.rc.todo}({self.rc.todo.name})")
+        # check if ttft is one of the properties of the role,
+        if "ConductResearch" in str(self.rc.todo) and "ttft" in self.__dict__:
+            self.ttft = time.time()
+        import pdb; pdb.set_trace()
         response = await self.rc.todo.run(self.rc.history)
         if isinstance(response, (ActionOutput, ActionNode)):
             msg = Message(

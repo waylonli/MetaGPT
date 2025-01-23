@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import asyncio
 from typing import Any, Callable, Optional, Union
-
+import time
 from pydantic import TypeAdapter, model_validator
 
 from metagpt.actions import Action
@@ -14,6 +14,8 @@ from metagpt.tools.search_engine import SearchEngine
 from metagpt.tools.web_browser_engine import WebBrowserEngine
 from metagpt.utils.common import OutputParser
 from metagpt.utils.text import generate_prompt_chunk, reduce_message_length
+from metagpt.const import LOG_PATH
+import os
 
 LANG_PROMPT = "Please respond in {language}."
 
@@ -110,14 +112,30 @@ class CollectLinks(Action):
             A dictionary containing the search questions as keys and the collected URLs as values.
         """
         system_text = system_text if system_text else RESEARCH_TOPIC_SYSTEM.format(topic=topic)
+        keyword_start_time = time.time()
         keywords = await self._aask(SEARCH_TOPIC_PROMPT, [system_text])
+        keyword_end_time = time.time()
+        f = open(os.path.join(LOG_PATH, "collect_links.log"), "a")
+        f.write(f"{'='*20}\n")
+        f.write(f"{'-'*10}\n")
+        f.write(f"Keywords generation time: {keyword_end_time - keyword_start_time:.2f} seconds\n")
+        f.write(f"Topic: {topic}\n")
+        f.write(f"Keywords: {keywords}\n")
+        f.write(f"{'-'*10}\n")
         try:
             keywords = OutputParser.extract_struct(keywords, list)
             keywords = TypeAdapter(list[str]).validate_python(keywords)
         except Exception as e:
             logger.exception(f"fail to get keywords related to the research topic '{topic}' for {e}")
             keywords = [topic]
+
+        search_start_time = time.time()
         results = await asyncio.gather(*(self.search_engine.run(i, as_string=False) for i in keywords))
+        search_end_time = time.time()
+        f.write(f"{'-'*10}\n")
+        f.write(f"Search time: {search_end_time - search_start_time:.2f} seconds\n")
+        f.write(f"Search results: {results}\n")
+        f.write(f"{'-'*10}\n")
 
         def gen_msg():
             while True:
@@ -136,7 +154,16 @@ class CollectLinks(Action):
         model_name = config.llm.model
         prompt = reduce_message_length(gen_msg(), model_name, system_text, config.llm.max_token)
         logger.debug(prompt)
+
+
+        query_optimization_start_time = time.time()
         queries = await self._aask(prompt, [system_text])
+        query_optimization_end_time = time.time()
+        f.write(f"{'-'*10}\n")
+        f.write(f"Query optimization time: {query_optimization_end_time - query_optimization_start_time:.2f} seconds\n")
+        f.write(f"Queries: {queries}\n")
+        f.write(f"{'-'*10}\n")
+
         try:
             queries = OutputParser.extract_struct(queries, list)
             queries = TypeAdapter(list[str]).validate_python(queries)
@@ -144,8 +171,20 @@ class CollectLinks(Action):
             logger.exception(f"fail to break down the research question due to {e}")
             queries = keywords
         ret = {}
-        for query in queries:
+
+        f.write(f"{'-'*10}\n")
+        search_and_rank_start_time = time.time()
+        last_item_time = search_and_rank_start_time
+        for idx, query in enumerate(queries):
             ret[query] = await self._search_and_rank_urls(topic, query, url_per_query)
+            f.write(f"Search and rank item {idx} time: {time.time() - last_item_time:.2f} seconds\n")
+            last_item_time = time.time()
+            f.write(f"Results: {ret[query]}\n")
+            f.write(f"{'-'*3}\n")
+        f.write(f"{'-'*3}\n")
+        search_and_rank_end_time = time.time()
+        f.write(f"Total search and rank time: {search_and_rank_end_time - search_and_rank_start_time:.2f} seconds\n")
+
         return ret
 
     async def _search_and_rank_urls(self, topic: str, query: str, num_results: int = 4) -> list[str]:
@@ -222,6 +261,9 @@ class WebBrowseAndSummarize(Action):
 
         summaries = {}
         prompt_template = WEB_BROWSE_AND_SUMMARIZE_PROMPT.format(query=query, content="{}")
+        
+        import time
+        start = time.time()
         for u, content in zip([url, *urls], contents):
             content = content.inner_text
             chunk_summaries = []
@@ -244,6 +286,16 @@ class WebBrowseAndSummarize(Action):
             prompt = WEB_BROWSE_AND_SUMMARIZE_PROMPT.format(query=query, content=content)
             summary = await self._aask(prompt, [system_text])
             summaries[u] = summary
+        end = time.time()
+        with open(os.path.join(LOG_PATH, "web_browse_and_summarize.log"), "a") as f:
+            f.write(f"{'-'*20}\n")
+            f.write(f"{end - start:.2f} seconds\n")
+            f.write(f"Query: {query}\n")
+            f.write("Results:\n")
+            for u, s in summaries.items():
+                f.write(f"{u}\n{s}\n")
+            f.write(f"{'-'*20}\n")
+        
         return summaries
 
 

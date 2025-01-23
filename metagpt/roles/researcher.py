@@ -12,11 +12,12 @@ from pydantic import BaseModel
 
 from metagpt.actions import Action, CollectLinks, ConductResearch, WebBrowseAndSummarize
 from metagpt.actions.research import get_research_system_text
-from metagpt.const import RESEARCH_PATH
+from metagpt.const import RESEARCH_PATH, LOG_PATH
 from metagpt.logs import logger
 from metagpt.roles.role import Role, RoleReactMode
 from metagpt.schema import Message
-
+import time
+import os
 
 class Report(BaseModel):
     topic: str
@@ -37,6 +38,9 @@ class Researcher(Role):
         super().__init__(**kwargs)
         self.set_actions([CollectLinks, WebBrowseAndSummarize, ConductResearch])
         self._set_react_mode(RoleReactMode.BY_ORDER.value, len(self.actions))
+        self.research_start_time = None
+        self.ttft = None
+        self.research_end_time = None
         if self.language not in ("en-us", "zh-cn"):
             logger.warning(f"The language `{self.language}` has not been tested, it may not work.")
 
@@ -72,6 +76,8 @@ class Researcher(Role):
         else:
             summaries = instruct_content.summaries
             summary_text = "\n---\n".join(f"url: {url}\nsummary: {summary}" for (url, summary) in summaries)
+            # check if ttft is one of the properties of the role,
+            self.ttft = time.time()
             content = await self.rc.todo.run(topic, summary_text, system_text=research_system_text)
             ret = Message(
                 content="",
@@ -95,8 +101,17 @@ class Researcher(Role):
         return get_research_system_text(topic, self.language)
 
     async def react(self) -> Message:
+        self.research_start_time = time.time()
         msg = await super().react()
         report = msg.instruct_content
+        self.research_end_time = time.time()
+        with open(os.path.join("logs", "researcher_system.log"), "a") as f:
+            f.write(f"{'-'*20}\n")
+            f.write(f"Time to first token: {self.ttft - self.research_start_time:.2f} seconds\n")
+            f.write(f"Time spent on report generation: {self.research_end_time - self.ttft:.2f} seconds\n")
+            f.write(f"Time to complete research: {self.research_end_time - self.research_start_time:.2f} seconds\n")
+            f.write(f"{'-'*20}\n")
+
         self.write_report(report.topic, report.content)
         return msg
 
@@ -112,8 +127,21 @@ class Researcher(Role):
 if __name__ == "__main__":
     import fire
 
+    # empty al the logs file under the logs folder
+    all_logs = os.listdir(os.path.join(LOG_PATH))
+    for log in all_logs:
+        if log.endswith(".log") or log.endswith(".txt"):
+            with open(os.path.join(LOG_PATH, log), "w") as f:
+                f.write("")
+    
     async def main(topic: str, language: str = "en-us", enable_concurrency: bool = True):
         role = Researcher(language=language, enable_concurrency=enable_concurrency)
         await role.run(topic)
 
     fire.Fire(main)
+
+    # after finish add to the end of the llm_call.log file to count the number of occurrences of ****************************** to get the number of times LLM is called
+    with open(os.path.join(LOG_PATH, "llm_call.log"), "a") as f:
+        text = f.read()
+        count = text.count("*" * 30)
+        f.write(f"Toal number of times LLM called: {count}\n")

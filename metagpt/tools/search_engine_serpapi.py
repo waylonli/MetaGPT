@@ -10,7 +10,8 @@ from typing import Any, Dict, Optional, Tuple
 
 import aiohttp
 from pydantic import BaseModel, ConfigDict, Field, model_validator
-
+import os
+from metagpt.const import LOG_PATH
 
 class SerpAPIWrapper(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
@@ -42,8 +43,25 @@ class SerpAPIWrapper(BaseModel):
         return values
 
     async def run(self, query, max_results: int = 8, as_string: bool = True, **kwargs: Any) -> str:
+        # record the time for fetching the content from the web and how many urls are there
+        import time
+        start = time.time()
         """Run query through SerpAPI and parse result async."""
         result = await self.results(query, max_results)
+        end = time.time()
+        with open(os.path.join(LOG_PATH, "search_engine_serpapi.log"), "a") as f:
+            # use a separator to separate the time and the number of urls
+            f.write(f"{'-'*20}\n")
+            f.write(f"{end - start:.2f} seconds\n")
+            f.write(f"Query: {query}\n")
+            f.write(f"{'-'*20}\n")
+        
+        # also print the result to the console
+        print(f"{'-'*20}")
+        print(f"{end - start:.2f} seconds")
+        print(f"Query: {query}")
+        print(f"{'-'*20}")
+
         return self._process_response(result, as_string=as_string)
 
     async def results(self, query: str, max_results: int) -> dict:

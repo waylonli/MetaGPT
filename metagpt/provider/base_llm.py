@@ -28,6 +28,8 @@ from metagpt.logs import logger
 from metagpt.schema import Message
 from metagpt.utils.common import log_and_reraise
 from metagpt.utils.cost_manager import CostManager, Costs
+import os
+from metagpt.const import LOG_PATH
 
 
 class BaseLLM(ABC):
@@ -134,6 +136,11 @@ class BaseLLM(ABC):
         timeout=USE_CONFIG_TIMEOUT,
         stream=None,
     ) -> str:
+        with open(os.path.join(LOG_PATH, "llm_call.log"), "a", encoding="utf-8") as f:
+            f.write(f"{'*'*30}\n")
+            f.write(f"[Query]\n")
+            f.write(f"{msg}\n")
+            f.write(f"{'~'*30}\n\n")
         if system_msgs:
             message = self._system_msgs(system_msgs)
         else:

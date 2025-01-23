@@ -49,6 +49,7 @@ TEST_DATA_PATH = METAGPT_ROOT / "tests/data"
 RESEARCH_PATH = DATA_PATH / "research"
 TUTORIAL_PATH = DATA_PATH / "tutorial_docx"
 INVOICE_OCR_TABLE_PATH = DATA_PATH / "invoice_table"
+LOG_PATH = METAGPT_ROOT / "logs"
 
 UT_PATH = DATA_PATH / "ut"
 SWAGGER_PATH = UT_PATH / "files/api/"
