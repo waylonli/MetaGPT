@@ -1,0 +1,3153 @@
+******************************
+[Query]
+Please provide up to 2 necessary keywords related to your research topic for Google search. Your response must be in JSON format, for example: ["keyword1", "keyword2"].
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. The keywords related to your research topic and the search results are shown in the "Search Result Information" section.
+2. Provide up to 4 queries related to your research topic base on the search results.
+3. Please respond in the following JSON format: ["query1", "query2", "query3", ...].
+
+### Search Result Information
+#### Keyword: AI search engine market analysis
+ Search Result: [{'title': 'AI-powered online search - statistics & facts', 'link': 'https://www.statista.com/topics/10825/ai-powered-online-search/', 'snippet': "AI-powered search engines are conversational generative AIs that combine deep learning techniques, users' inputs, and growing datasets."}, {'title': 'Will AI grow bigger than Google search? 2020-2028 ...', 'link': 'https://morningscore.io/will-ai-grow-bigger-than-google-search-2020-2028-statistics-and-my-predictions/', 'snippet': 'I project AI usage to grow up to 35% yearly from 2025. This is optimistic. It will lead to a 14% share of the search market by 2028.'}, {'title': 'Will AI-Powered Search Engines Ultimately End Traditional ...', 'link': 'https://www.cmswire.com/digital-experience/will-ai-powered-search-engines-ultimately-end-traditional-search/', 'snippet': 'AI-powered search engines are challenging traditional search solutions and forcing marketers to rethink SEO strategies and how they engage users.'}, {'title': 'Top Generative AI Chatbots by Market Share – January 2025', 'link': 'https://firstpagesage.com/reports/top-generative-ai-chatbots/', 'snippet': 'We also provide market share trend over time for the top 4 generative AI chatbots: ChatGPT, Google Gemini, Perplexity, and ClaudeAI.'}, {'title': '10 AI Market Research Tools & How To Use Them', 'link': 'https://www.quantilope.com/resources/best-ai-market-research-tools', 'snippet': 'This blog explores some of the top AI-based market research tools that speed up the time to insights without sacrificing quality or substance.'}, {'title': 'I Reviewed the Best AI Search Engines for 2025', 'link': 'https://ahrefs.com/blog/best-ai-search-engines/', 'snippet': 'I Reviewed the Best AI Search Engines for 2025 · 1. Perplexity · 2. Google AI Overviews · 3. ChatGPT Search · 4. Bing AI.'}, {'title': 'Gartner Predicts Search Engine Volume Will Drop 25% by ...', 'link': 'https://www.gartner.com/en/newsroom/press-releases/2024-02-19-gartner-predicts-search-engine-volume-will-drop-25-percent-by-2026-due-to-ai-chatbots-and-other-virtual-agents', 'snippet': 'By 2026, traditional search engine volume will drop 25%, with search marketing losing market share to AI chatbots and other virtual agents, according to ...'}]
+
+#### Keyword: RAG pipeline technology
+ Search Result: [{'title': 'RAG 101: Demystifying Retrieval-Augmented Generation ...', 'link': 'https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/', 'snippet': 'This post explains the benefits of using the RAG technique when building an LLM application, along with the components of a RAG pipeline.'}, {'title': 'What is Retrieval Augmented Generation (RAG)?', 'link': 'https://www.databricks.com/glossary/retrieval-augmented-generation-rag', 'snippet': 'Retrieval augmented generation or RAG is an architectural approach that pulls your data as context for large language models (LLMs) to improve relevancy.'}, {'title': 'A Comprehensive Guide for RAG Pipeline', 'link': 'https://www.signitysolutions.com/blog/rag-pipeline', 'snippet': 'This blog is your complete guide to understanding the RAG pipeline, components, benefits, challenges, and the step-by-step process to build and integrate it.'}, {'title': 'A Deep Dive into RAG Pipelines - Komal Vardhan Lolugu', 'link': 'https://komalvardhan.medium.com/a-deep-dive-into-rag-pipelines-34399b08324a', 'snippet': 'A RAG pipeline is a multi-stage process that leverages the strengths of both retrieval techniques and large language models (LLMs) to deliver exceptional ...'}, {'title': 'RAG Pipeline: Benefits, Components, and How to Build It', 'link': 'https://www.openxcell.com/blog/rag-pipeline/', 'snippet': 'RAG pipeline is a process that converts large-scale data into usable insights, which LLM models use to generate contextually accurate and relevant output.'}, {'title': 'What is RAG (Retrieval-Augmented Generation)?', 'link': 'https://aws.amazon.com/what-is/retrieval-augmented-generation/', 'snippet': 'RAG is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources ...'}, {'title': 'How to build a better RAG pipeline - Vectorize', 'link': 'https://vectorize.io/how-to-build-a-rag-pipeline/', 'snippet': 'The primary goal of a RAG pipeline is to create a reliable vector search index, populated with factual knowledge and relevant context. When done ...'}]
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Topic
+帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。
+### Query
+AI search engine market trends 2025
+
+### The online search results
+0: {'title': 'AI Marketing Trends in 2025', 'link': 'https://www.smartinsights.com/digital-marketing-strategy/ai-marketing-trends-2025/', 'snippet': '6 Trends and the latest practical innovations which will change marketing in the year(s) ahead · Individual prompts. · Not truly conversational.'}
+1: {'title': 'I Reviewed the Best AI Search Engines for 2025', 'link': 'https://ahrefs.com/blog/best-ai-search-engines/', 'snippet': 'I Reviewed the Best AI Search Engines for 2025 · 1. Perplexity · 2. Google AI Overviews · 3. ChatGPT Search · 4. Bing AI.'}
+2: {'title': '5 ways AI will shape businesses in 2025', 'link': 'https://blog.google/products/google-cloud/ai-trends-business-2025/', 'snippet': '5 ways AI will shape businesses in 2025 · 1. Multimodal AI will deliver more context · 2. AI agents will simplify complex tasks · 3. Enterprise ...'}
+3: {'title': 'AI Marketing Trends to Watch in 2025', 'link': 'https://nogood.io/2025/01/06/ai-marketing-trends-2025/', 'snippet': '1. AI Agents: Your Marketing Side-Kick · 2. Hyper-Personalization · 3. Answer Engine Optimization · 4. Predictive Analytics. Tools to Try in 2025.'}
+4: {'title': '77 AI Statistics & Trends to Quote in 2025 + Own Survey ...', 'link': 'https://planable.io/blog/ai-statistics/', 'snippet': 'The global AI industry is set to grow at a compound annual growth rate (CAGR) of 36.6% between 2024 and 2030. This shows how quickly AI tech is ...'}
+5: {'title': '5 AI Trends That Will Dominate 2025, From Apple to ...', 'link': 'https://www.adweek.com/media/5-ai-trends-2025/', 'snippet': 'In 2025, generative artificial intelligence will shift from a behind-the-scenes tool to a central driver of innovation in marketing.'}
+6: {'title': "Marketers' Guide to Adapting to AI-Powered Search Engines", 'link': 'https://www.cmswire.com/digital-marketing/preparing-for-2025-will-ai-search-be-the-david-to-googles-goliath/', 'snippet': 'AI-powered search engines are disrupting traditional search and creating new opportunities for marketers in an increasingly fragmented digital landscape.'}
+
+### Requirements
+Please remove irrelevant search results that are not related to the query or topic. Then, sort the remaining search results based on the link credibility. If two results have equal credibility, prioritize them based on the relevance. Provide the
+ranked results' indices in JSON format, like [0, 1, 3, 4, ...], without including other words.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Topic
+帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。
+### Query
+RAG pipeline components and benefits
+
+### The online search results
+0: {'title': 'Understanding the RAG Pipeline: Components and ...', 'link': 'https://medium.com/@ajayverma23/understanding-the-rag-pipeline-components-and-hyperparameters-66772b7ede56', 'snippet': 'This post unpacks the core components of a RAG pipeline, explores their options, and discusses the critical role of hyperparameters.'}
+1: {'title': 'RAG Pipeline: Benefits, Challenges, And How To Build One', 'link': 'https://lakefs.io/blog/what-is-rag-pipeline/', 'snippet': 'Components of a RAG pipeline · 1. Ingestion · 2. Extraction · 3. Transformation · 4. Chunking/embedding · 4. Persistence · 5. Refreshing.'}
+2: {'title': 'RAG 101: Demystifying Retrieval-Augmented Generation ...', 'link': 'https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/', 'snippet': 'This post explains the benefits of using the RAG technique when building an LLM application, along with the components of a RAG pipeline.'}
+3: {'title': 'A Deep Dive into RAG Pipelines - Komal Vardhan Lolugu', 'link': 'https://komalvardhan.medium.com/a-deep-dive-into-rag-pipelines-34399b08324a', 'snippet': 'This blog has provided a comprehensive overview of RAG pipelines, their core components, and their numerous benefits. As we move towards a ...'}
+4: {'title': 'RAG Pipeline: Benefits, Components, and How to Build It', 'link': 'https://www.openxcell.com/blog/rag-pipeline/', 'snippet': 'RAG pipeline protects sensitive information by providing secure storage and retrieval, data encryption, sensitive data omission, and more. This ...'}
+5: {'title': 'The Key Components Of A RAG System: A Technical Deep ...', 'link': 'https://customgpt.ai/components-of-a-rag-system/', 'snippet': 'In this post we will dive into each component practically, providing a step-by-step instructions for building and implementing an entire RAG pipeline.'}
+6: {'title': 'A Comprehensive Guide for RAG Pipeline', 'link': 'https://www.signitysolutions.com/blog/rag-pipeline', 'snippet': 'This blog is your complete guide to understanding the RAG pipeline, components, benefits, challenges, and the step-by-step process to build and integrate it.'}
+7: {'title': 'RAG Pipelines: Everything You Need to Know', 'link': 'https://encord.com/blog/rag-pipelines/', 'snippet': 'RAG pipelines rely on two interconnected components: retrieval and generation. Each stage has specific responsibilities, tools, and design ...'}
+
+### Requirements
+Please remove irrelevant search results that are not related to the query or topic. Then, sort the remaining search results based on the link credibility. If two results have equal credibility, prioritize them based on the relevance. Provide the
+ranked results' indices in JSON format, like [0, 1, 3, 4, ...], without including other words.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Topic
+帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。
+### Query
+impact of AI on traditional search engines
+
+### The online search results
+0: {'title': 'Will AI-Powered Search Engines Ultimately End Traditional ...', 'link': 'https://www.cmswire.com/digital-experience/will-ai-powered-search-engines-ultimately-end-traditional-search/', 'snippet': 'AI-powered search engines are challenging traditional search solutions and forcing marketers to rethink SEO strategies and how they engage users.'}
+1: {'title': 'The Impact of Generative AI on Traditional Search Engines', 'link': 'https://www.vktr.com/ai-technology/the-impact-of-generative-ai-on-traditional-search-engines-a-deep-dive-into-openais-searchgpt/', 'snippet': 'One of the most profound implications of generative AI for traditional search engines is the emergence of retrieval-augmented generation (RAG).'}
+2: {'title': 'AI Search Engines vs. Traditional ...', 'link': 'https://www.perplexity.ai/page/ai-search-engines-vs-tradition-eYTfUTD2Qxyjay76eBJE1w', 'snippet': 'AI search engines are emerging as a powerful alternative to traditional search engines, leveraging advanced natural language processing and machine learning.'}
+3: {'title': 'Search engines post-ChatGPT: How generative artificial ...', 'link': 'https://www.cip.uw.edu/2024/02/18/search-engines-chatgpt-generative-artificial-intelligence-less-reliable/', 'snippet': 'In this commentary, we discuss the evolving nature of search engines, as they begin to generate, index, and distribute content created by generative artificial ...'}
+4: {'title': 'GenAI search vs. traditional search engines: How they differ', 'link': 'https://www.techtarget.com/whatis/feature/GenAI-search-vs-traditional-search-engines-How-they-differ', 'snippet': 'More personalized results. AI will likely provide increasingly highly customized search experiences based on user preferences and behaviors.'}
+5: {'title': 'How AI will affect the future of search', 'link': 'https://searchengineland.com/ai-future-search-436277', 'snippet': 'Generative AI impacts more than just search rankings. It influences creative storytelling, tone differentiation, and user engagement metrics.'}
+6: {'title': 'Traditional Search vs. AI-Powered Search Explained', 'link': 'https://prerender.io/blog/traditional-search-vs-ai-powered-search-explained/', 'snippet': 'Beyond keywords, AI focuses on context, semantics, and user behaviour, necessitating a more sophisticated approach to SEO. The primacy now lies ...'}
+
+### Requirements
+Please remove irrelevant search results that are not related to the query or topic. Then, sort the remaining search results based on the link credibility. If two results have equal credibility, prioritize them based on the relevance. Provide the
+ranked results' indices in JSON format, like [0, 1, 3, 4, ...], without including other words.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Topic
+帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。
+### Query
+market share analysis of AI search engines
+
+### The online search results
+0: {'title': 'AI-powered online search - statistics & facts', 'link': 'https://www.statista.com/topics/10825/ai-powered-online-search/', 'snippet': 'With little changes in the market share of big search companies, the trend sees more optimism among marketers, who strongly believe in the effectiveness of chat ...'}
+1: {'title': 'Top Generative AI Chatbots by Market Share – January 2025', 'link': 'https://firstpagesage.com/reports/top-generative-ai-chatbots/', 'snippet': 'We also provide market share trend over time for the top 4 generative AI chatbots: ChatGPT, Google Gemini, Perplexity, and ClaudeAI.'}
+2: {'title': 'Is Google Losing Search Market Share?', 'link': 'https://sparktoro.com/blog/is-google-losing-search-market-share/', 'snippet': 'Supposedly, in 2025, for the first time, Google may fall under 50% of market share in search advertising (according to an eMarketer report the ...'}
+3: {'title': 'Will AI grow bigger than Google search? 2020-2028 ...', 'link': 'https://morningscore.io/will-ai-grow-bigger-than-google-search-2020-2028-statistics-and-my-predictions/', 'snippet': 'In 2024 all AI tools have around 6% share of the search market. And actually this number is declining from a 2023 high. I project AI usage to ...'}
+4: {'title': 'Search Engine Market Share Worldwide', 'link': 'https://gs.statcounter.com/search-engine-market-share', 'snippet': 'This graph shows the market share of search engines worldwide from Dec 2023 - Dec 2024. Facebook has 63.9%, Instagram has 13% and Pinterest has 9.4%.'}
+5: {'title': "ChatGPT's search surge: 1% market share predicted by 2025", 'link': 'https://searchengineland.com/chatgpt-search-market-share-1-percent-449378', 'snippet': "Google is still far and away the leader, with 92.4% of referral traffic coming from Google. Meanwhile, Microsoft Bing's market share was 4.2% in ..."}
+6: {'title': "AI Is Slowly Eating Away at Google Search's Ad Market Share", 'link': 'https://www.businessinsider.com/google-search-ad-market-share-perplexity-ai-openai-chatgpt-2024-10', 'snippet': "Google's share of the search ad market could drop below 50% for the first time in a decade as AI search engines boom."}
+7: {'title': 'Google Current Market Share among all Search Engines', 'link': 'https://seodesignchicago.com/marketing/google-market-share-search-engines/', 'snippet': 'A: As of 2024, Google maintains approximately 91.62% of the global search market share. This dominance has been consistent for over a decade, though it has seen ...'}
+
+### Requirements
+Please remove irrelevant search results that are not related to the query or topic. Then, sort the remaining search results based on the link credibility. If two results have equal credibility, prioritize them based on the relevance. Provide the
+ranked results' indices in JSON format, like [0, 1, 3, 4, ...], without including other words.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "AI search engine market trends 2025".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Take our AI content survey
+ 
+SEO 
+Marketing 
+Data & Studies
+Product
+Guides  
+SEARCH
+Search
+Subscribe
+GENERAL SEO
+I Reviewed the Best AI Search Engines for 2025
+By Ryan Law
+December 19, 2024
+9 min read
+Ryan Law
+Ryan Law is the Director of Content Marketing at Ahrefs. Ryan has 13 years experience as a writer, content strategist, team lead, marketing director, VP, CMO, and agency founder. He's helped dozens of companies improve their content marketing and SEO, including Google, Zapier, GoDaddy, Clearbit, and Algolia. He's also a novelist and the creator of two content marketing courses.
+Article Performance
+Data from Ahrefs
+Organic traffic 
+2.64K
+Linking websites 
+47
+Sign up for Ahrefs
+Get SEO metrics of any website or URL.
+Get the week's best marketing content
+Email Subscription
+Subscribe
+Contents
+Summary
+My testing process
+1. Perplexity
+2. Google AI Overviews
+3. ChatGPT Search
+4. Bing AI
+I rigorously tested the most popular AI search engines to discover their strengths and weaknesses.
+
+ 
+
+I ran this test for two reasons:
+
+As a human being, I want to use the best search engine around. I spend my life on the internet. I want to find information in the fastest, most effortless way possible.
+As a marketer, I want to know where the tide is headed. Will AI search engines replace “traditional” search engines? Are AI chatbots really good enough to dethrone Google? Should I start investing more effort in LLM optimization?
+
+There are basically a thousand products claiming to be AI search engines, but I focused on the biggest and most popular.
+
+I tested out the AI features on offer from two existing search giants—Google’s AI Overviews and Bing AI—and two trendy AI upstarts—ChatGPT Search and Perplexity.
+
+The best AI search engines are—in my opinion—ChatGPT Search for the best chatbot experience, and Google’s AI Overviews for the best all-around search engine.
+
+Read on for pros and cons, screenshots, and short videos of the search experience.
+
+The best AI search engines
+AI search engine	Best for…	Pricing
+ChatGPT Search	Best AI chatbot search experience	Free; $20/month for Pro
+Google AI Overviews	Best combination of traditional search and AI features	Free
+Perplexity	Best for research and news	Free; $20/month for Pro
+Bing AI	Best for simple searches	Free
+My testing process
+
+In order to properly judge the quality of each search engine’s results, I focused on a topic where I’m a world-class expert: digital marketing the role-playing video game Skyrim.
+
+Because I’m an SEO, I also wanted to test as many different types of search queries as possible. I brainstormed tons of Skyrim searches grouped by different categories, including:
+
+Short-tail queries (e.g. skyrim)
+Long-tail queries (e.g. how to solve the mzulft oculory puzzle)
+Transactional queries (e.g. best paid skyrim mods)
+Informational queries (e.g. how to level up smithing quickly in skyrim)
+Navigational queries (e.g. uesp skyrim map)
+Local queries (e.g. buy skyrim near me)
+Image queries (e.g. skyrim landscapes)
+Trending queries (e.g. skyrim nolvus)
+HOW TO FIND TONS OF KEYWORDS ON ANY TOPIC
+
+The Intents filter in Keywords Explorer was a big help for brainstorming keywords. I ran a search for “skyrim”, navigated to the Matching terms report, and filtered by different intents to find ideas.
+
+I ran these searches through every AI search engine and recorded my experience. I focused particularly on:
+
+Relevance: were the results appropriate for my query?
+Accuracy: did the search engines return valid, up-to-date information?
+Usefulness: did I meet the intent of my search? Did I leave happy?
+Speed: how quickly did I get my answer?
+Ease-of-use: how much effort did it require?
+
+This is a completely unscientific but very interesting analysis of the best AI search engines. Let’s get started.
+
+1. Perplexity
+
+ 
+
+My opinion: A research assistant that excels with news and summarization, but doesn’t really “feel” like a search engine.
+
+Price: Free; $20/month for Pro
+
+Link: https://www.perplexity.ai/
+
+Pros
+
+Excellent at summarising lots of sources.
+Great for news-related topics.
+The “Related topics” feature is useful.
+
+Cons
+
+Plenty of incorrect answers and hallucinations.
+Bad at image, commercial, and local searches.
+Didn’t really feel like a search engine.
+
+Perplexity feels more like a Wiki or a knowledge base than it does a search engine. Many of its responses are terse bulleted lists, and it excelled in summarising technical queries (like DA09Dawnbreaker) or news-related topics (like elder scrolls vi news).
+
+I also noticed lots of errors and hallucinations in its output. One example: for Should I become a vampire or a werewolf in skyrim?, Perplexity suggested that werewolves were immune to silver weapons—they actually take bonus damage from them. (C’mon Perplexity, honestly.)
+
+Information often seemed outdated too. Perplexity said that Skyrim SE was on sale for $7.99 on Steam (it wasn’t), and the sale extended until May 30… 2024. It feels like Perplexity’s index isn’t anywhere near as fresh as other AI search engines.
+
+Perplexity also regularly failed to “get” the intent behind my searches, and defaulted to word salad paragraphs of text. When I searched for “Steam skyrim”, I got a long, rambling response with no actual link to Steam. For “Skyrim creations”, it listed no actual creations, and just shared a Wiki-style overview of the Creation concept.
+
+Perplexity also struggled with image searches, commercial queries were very unsatisfying, and local searches were decidedly not local, with responses that recommended websites and shops that were nowhere near me.
+
+2. Google AI Overviews
+
+My opinion: A great all-rounder search engine that incorporates AI in limited—but useful—ways.
+
+Price: Free
+
+Link: https://www.google.com/
+
+Pros
+
+AI Overviews were generally helpful (when they showed up).
+Does a great job at surfacing different media formats, like images and videos.
+Excels at commercial and transactional searches.
+
+Cons
+
+Very cluttered search results, often with duplication between AI Overviews and Fatured Snippets.
+AI Overviews feel like a dead-end—you can’t continue to interact with them.
+Felt a little weird having Reddit in the majority of SERPs.
+
+It was fun evaluating Google Search through fresh eyes. Unsurprisingly, Google was very good for commercial and local queries: interactive product carousels made it easy to find relevant products in no time, and map packs were fantastic for finding local shops.
+
+I was also reminded of just how powerful Google’s integration with YouTube is: any queries that were best resolved with video content almost always included YouTube videos—often timestamped—in the SERP.
+
+AI and machine learning underpin all of Google Search, but as far as specific AI features, AI Overviews only triggered for about 15% of my queries. These were all informational queries, and in most cases, they were very specific long-tail queries.
+
+The AI Overviews were actually pretty good, relevant and accurate—but I definitely missed the ability to keep interacting with the AI.
+
+AI Overviews generally felt like amped-up Feature snippets, providing direct, certain answers to long-tail queries in SERPs (and in fact, many of the AI Overviews competed directly with duplicate Featured snippets directly below them in the SERP).
+
+It was also a little weird having Reddit present in so many SERPs. Some queries really are best-suited by user generated content—like those with no objective “best” answer—but Reddit muscled its way in everywhere.
+
+3. ChatGPT Search
+
+ 
+
+My opinion: The best AI chatbot for specific, text-heavy searches (but still lacking some “classic” search features).
+
+Price: Free; $20/month for Pro
+
+Link: https://chatgpt.com/
+
+Pros
+
+Excellent for very specific long-tail queries.
+The ability to ask follow-on questions is extremely good.
+“Memory” feature is useful.
+
+Cons
+
+Outright failed on several occasions.
+Pretty bad for image searches and commercial searches.
+Verbose, likes to write long answers even for simple questions.
+
+ChatGPT Search is fantastic for very specific long-tail queries. Answers to queries like Should I become a vampire or a werewolf in skyrim? were like reading a short blog post that was written just to summarise a bunch of sources specifically for your query—because, well, it was.
+
+Couple this with the ability to ask follow-up questions, and ChatGPT’s ability to remember information from previous conversations (its “memory”), and asking long, complicated questions is a ton of fun.
+
+But this strength is also a weakness. ChatGPT excels with text-heavy queries, and kinda sucks for many others. Short-tail queries felt way more limited than Google. Navigational queries (like skyrim creation kit download) were unsatisfying: ChatGPT would explain precisely how to download the Creation Kit (a modding engine for Skyrim), but it couldn’t actually let you do it.
+
+It was also pretty weak with commercial queries, and very bad at image queries, with a default response limited to just four images (nowhere near enough to sate my appetite for hi-res skyrim landscapes). Although one surprise: ChatGPT Search incorporated playable YouTube videos directly into its responses.
+
+ChatGPT Search outright failed for a few queries, requiring multiple refreshes to get results for very basic queries. All-in-all, it was strongest for queries that benefited from long, detailed text responses, and worse on almost every level for all the other queries.
+
+4. Bing AI
+
+ 
+
+My opinion: A solid second-choice search engine with experimental AI features that don’t really deliver.
+
+Price: Free
+
+Link: https://www.bing.com/
+
+Pros
+
+Great at navigational and commercial searches.
+Interesting search features for short-tail queries.
+
+Cons
+
+AI features were quite often broken and unhelpful.
+Slightly disappointing local and news searches.
+
+Bing has two outwardly obvious “AI” features. One is a text snippet, very similar to Google’s Featured Snippets and AI Overviews. These worked okay, but not as well as Google’s AI Overviews.
+
+Often, the AI answers didn’t quite understand my search (the response for Should I become a vampire or a werewolf in skyrim? didn’t actually include an answer—just steps to become either a vampire or werewolf).
+
+The other was a dynamically generated “table of contents” module, and despite looking nice, it generally fell somewhere between not helpful and totally broken, with the different modules appearing in jumbled orders or missing steps.
+
+Like Google Search, Bing performed perfectly at navigational queries and showed tons of products and inspiration for commercial searches. It returned good results for newer, trending topics (as did all the search engines, surprisingly).
+
+Most of all, I loved the visual sidebar that appeared for the short-tail searches, offering tons of facts and trivia for skyrim. When the search intent is so so vague, it seems incredibly helpful to treat the SERP as a mood board of inspiration and possible wormholes to pursue.
+
+Surprisingly, I was disappointed with local searches, and the news search (Elder scrolls vi news) was pretty awful.
+
+Final thoughts
+
+“Traditional” search engines have decades of experience in making searchers—and all the different types of searches they make—happy. This experience is obvious across commercial, local, and image searches where Google and Bing dominated the newer tools.
+
+But “pure” AI search engines also unlock new types of search behavior. The query Skyrim bosmer stealth archer build backstory was sensational with ChatGPT, allowing me to actively brainstorm and refine a story in a way I never could with Google Search. Perplexity excelled at summarising news and complex information.
+
+Are the strengths of AI search engines enough to make up for their many weaknesses? Will searchers abandon a company that controls 88.5% of the current search engine market to experiment with relatively unproven new tools?
+
+More likely (in my estimation) is that we’ll see the existing search engines build, integrate, and partner with AI companies to bring the best features into the existing search experience (like Bing’s partnership with OpenAI.)
+
+In the meantime, the best AI search engines are—in my opinion—ChatGPT Search for the best chatbot experience, and Google’s AI Overviews for the best all-around search engine.
+
+Article by
+Ryan Law
+Ryan Law is the Director of Content Marketing at Ahrefs. Ryan has 13 years experience as a writer, content strategist, team lead, marketing director, VP, CMO, and agency founder. He's helped dozens of companies improve their content marketing and SEO, including Google, Zapier, GoDaddy, Clearbit, and Algolia. He's also a novelist and the creator of two content marketing courses.
+Keep Learning
+Content Hubs for SEO: How to Get More Traffic and Links With Topic Clusters
+Content hubs are interlinked collections of content about a similar topic. Learn why they're good for SEO and how you can create one for yourself.
+How to Increase Website Authority (Domain Rating)
+Learn what website authority is, how Domain Rating (DR) is calculated and how to increase your score the right way.
+The SEO Process in a Nutshell (4 Steps)
+SEO is the practice of growing a website's traffic from organic search results. To do it effectively, work on these four things.
+How to Target Keywords With Blog Posts (& Get More Search Traffic)
+Learn the three-step process on how to target keywords using blog posts.
+The Only 3 Keyword Monitoring Tools You Need
+We share the three keyword monitoring tools you’ll need to do SEO and work on PR and social media management.
+SEARCH
+English
+© 2025 Ahrefs Pte Ltd.
+PICK A TOPIC
+SEO
+General SEO
+Keyword Research
+On-Page SEO
+Link Building
+Technical SEO
+Local SEO
+Enterprise SEO
+Marketing
+General Marketing
+Content Marketing
+Affiliate Marketing
+Paid Marketing
+Video Marketing
+Data & Studies
+Product
+AHREFS TOOLS
+Core Tools
+Site Explorer
+Keywords Explorer
+Content Explorer
+Site Audit
+Rank Tracker
+Free Tools
+Backlink Checker
+Website Authority Checker
+Keyword Rank Checker
+Broken Link Checker
+SERP Checker
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "market share analysis of AI search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Subscribe
+Newsletters
+Business
+Strategy
+Economy
+Finance
+Retail
+Advertising
+Careers
+Media
+Real Estate
+Small Business
+The Better Work Project
+Tech
+Science
+AI
+Enterprise
+Transportation
+Startups
+Innovation
+Markets
+Stocks
+Indices
+Commodities
+Crypto
+Currencies
+ETFs
+Lifestyle
+Entertainment
+Culture
+Travel
+Food
+Health
+Parenting
+Reviews
+Tech
+Streaming
+Tickets
+Home
+Kitchen
+Style
+Beauty
+Gifts
+Deals
+Politics
+Military & Defense
+Law
+Education
+Personal Finance
+Banking
+Savings
+Best Savings Accounts
+Raisin Review
+Checking Accounts
+Best Checking Accounts
+Chime Checking Account
+SoFi Checking and Saving
+Best Money Market Accounts
+CDs
+Best CD Rates
+Best Bank Account Bonuses
+Cash Back Debit Cards
+Best Banks
+CIT Bank Review
+UFB Direct Bank
+Small Business Banking
+Credit Cards
+Credit Scores
+Credit Monitoring
+Best Credit Cards
+Best Cash Back Credit Cards
+Best Rewards Credit Cards
+Best Travel Credit Cards
+Best 0% APR Credit Cards
+Best Balance Transfer Credit Cards
+Best First Credit Cards
+Best Business Credit Cards
+Discover it Cash Back Credit Card
+Chase Sapphire Preferred Credit Card
+Investing
+Financial Planning
+Retirement
+Taxes
+Loans
+Best personal loans
+Best debt consolidation loans
+Best Loans for Bad Credit
+Student Loans
+Best Student Loans
+Best Student Loan Refinance
+Mortgages
+Best mortgage lenders
+Best mortgage refinance lenders
+Best FHA Lenders
+Best HELOC Lenders
+Insurance
+Best Car Insurance
+Homeowners Insurance
+Best Homeowners Insurance
+Best Renters Insurance
+Life Insurance
+Best Life Insurance
+Pet Insurance
+Best Pet Insurance
+Travel Insurance
+Best Travel Insurance
+SquareMouth Travel Insurance
+Identity Theft Protection
+Video
+Big Business
+Food Wars
+So Expensive
+Still Standing
+Boot Camp
+Subscribe
+Log in
+Newsletters
+US edition
+Deutschland & Österreich
+España
+Japan
+Netherlands
+Polska
+Get the app
+AI
+Google's share of the search ad market could drop below 50% for the first time in a decade as AI search engines boom
+Kenneth Niemeyer Oct 13, 2024, 4:37 PM GMT+1
+Share
+Save
+Google's share of US advertising could drop below 50% for the first time in more than 10 years, according to eMarketer. Dilara Irem Sancar/Anadolu via Getty Images
+Google is facing new competition in the advertising market as AI transforms the industry.
+Google's search ad market share in the US could fall below 50% for the first time in a decade.
+Perplexity AI, meanwhile, says it is attracting "top-tier" advertisers.
+
+Google is facing a challenge to its decadeslong dominance of the internet's advertising market as AI, the new kid on the block, changes everything.
+
+Projections by eMarketer — a digital marketing research company owned by Business Insider parent company Axel Springer — say that Google's share of the US search advertising market could drop below 50% next year for the first time in more than a decade.
+
+Long dominant, Google has begun to slip in other significant ways too. A recent study found that younger generations, like Gen Z and Gen Alpha, are no longer using the word "Google" as a verb. Young internet users are now "searching" instead of "Googling," Mark Shmulik, an analyst at Bernstein Research, said in a note to investors last month.
+
+This shift is due in part to the rise of AI tools like OpenAI's ChatGPT and Perplexity AI, which use large language models trained on massive amounts of data to answer user questions in natural language. ChatGPT set the record for the fast-growing user base for a consumer application soon after it first launched in late 2022.
+
+Never to be outdone, Google has raced to catch up. It launched Gemini, its own large language model that now presents Google search results in natural language at the top of the page, in March 2023. Google has since rolled out a series of other generative AI tools and enhancements to its search engine.
+
+Google is also leveraging AI to better present ads in its search results. It demonstrated an example earlier this month, showing how Tide products are now advertised below a search query for "how do I get grass stains out of jeans?"
+
+"We're confident in this approach to monetizing our AI-powered experiences," Brendon Kraham, a Google vice president overseeing the search ads business, told The Wall Street Journal. "We've been here before navigating these kinds of changes."
+
+While Google is still the most used search engine by a long shot, its competitors are nipping at its heels. The Perplexity AI search engine says it processed 340 million queries in September and has several "household, top-tier" companies looking to advertise on the platform, chief business officer Dmitry Shevelenko said, according to the Journal.
+
+Perplexity is valued at over $1 billion and has received funding from Jeff Bezos and Nvidia. It has also faced backlash, however, for not sourcing copyrighted material used in its results. Forbes accused the company in June of ripping off its content without attribution after the platform shared details of an investigative article on its new "Perplexity Pages" feature.
+
+On Perplexity, search queries are followed by questions that engage the user in a conversation. Perplexity says it will allow sponsors to advertise on those follow-up questions in the future.
+
+In a presentation to advertisers, Perplexity said answers to the sponsored questions would be approved ahead of time by advertisers "and can be locked, giving you comfort in how your brand will be portrayed in an answer," The Journal reported.
+
+"What we're opening up is the ability for a brand to spark or inspire somebody to ask a question about them," Shevelenko said.
+
+Google and Perplexity AI did not immediately return requests for comment for this story.
+
+Read next
+Google
+Tech
+Advertising
+Recommended video
+Legal & Privacy
+Terms of Service
+Terms of Sale
+Privacy Policy
+Accessibility
+Code of Ethics Policy
+Reprints & Permissions
+Disclaimer
+Advertising Policies
+Conflict of Interest Policy
+Commerce Policy
+Coupons Privacy Policy
+Coupons Terms
+Cookie Settings
+Company
+About Us
+Careers
+Advertise With Us
+Contact Us
+Company News
+Masthead
+Other
+Sitemap
+Stock quotes by finanzen.net
+International Editions
+AT
+DE
+ES
+JP
+NL
+PL
+Copyright © 2025 Insider Inc. All rights reserved. Registration on or use of this site constitutes acceptance of our Terms of Service and Privacy Policy.
+
+Jump to
+
+Main content
+Search
+Account
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "RAG pipeline components and benefits".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Skip to content
+Product
+Solutions
+Developers
+Resources
+Pricing
+Book a demo
+Try without installing
+Back to Blog
+BEST PRACTICES
+RAG Pipeline: Benefits, Challenges, And How To Build One
+
+Home > Blog > RAG Pipeline: Benefits, Challenges, And How To Build One
+
+Idan Novogroder
+Last updated on July 16, 2024
+
+It may be tempting to think large language models (LLMs) can provide commercial value without any additional work, but this is a rare case. Businesses can make the most of these models by adding their own data.
+
+To do this, teams can use a technique called retrieval augmented generation (RAG). What is a RAG pipeline and how do you manage it to stay in line with machine learning best practices? Keep reading to find out!
+
+Table of Contents
+
+What is a RAG pipeline?
+Components of a RAG pipeline
+RAG pipeline benefits and challenges
+How to build a RAG pipeline
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "RAG pipeline components and benefits".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+DEVELOPER
+Home
+Blog
+Forums
+Docs
+Downloads
+Training
+Join
+Generative AI
+English
+한국어
+RAG 101: Demystifying Retrieval-Augmented Generation Pipelines
+Dec 18, 2023
+By Hayden Wolff
++52
+Like
+ Discuss (1)
+
+Large language models (LLMs) have impressed the world with their unprecedented capabilities to comprehend and generate human-like responses. Their chat functionality provides a fast and natural interaction between humans and large corpora of data. For example, they can summarize and extract highlights from data or replace complex queries such as SQL queries with natural language. 
+
+It is tempting to assume that business value can be generated by these models with no extra effort, but this is unfortunately not often the case. Luckily, all that enterprises must do to extract value out of using LLMs is to augment the LLM with their own data. This can be done with retrieval augmented generation (RAG), which is showcased in the NVIDIA Generative AI Examples GitHub repo for developers 
+
+By augmenting an LLM with business data, enterprises can make their AI applications agile and responsive to new developments. For instance:
+
+Chatbots: Many enterprises already use AI chatbots to power basic customer interactions on their websites. With RAG, companies can build a chat experience that’s highly specific to their product. For example, questions about product specifications could easily be answered. 
+Customer service: Companies can empower live service representatives to easily answer customer questions with precise, up-to-date information.
+Enterprise search: Businesses have a wealth of knowledge across the organization, including technical documentation, company policies, IT support articles, and code repositories. Employees could query an internal search engine to retrieve information faster and more efficiently.
+
+This post explains the benefits of using the RAG technique when building an LLM application, along with the components of a RAG pipeline. For more information after you finish this post, see RAG 101: Retrieval-Augmented Generation Questions Answered.
+
+Benefits of RAG
+
+There are several advantages of using RAG:
+
+Empowering LLM solutions with real-time data access
+Preserving data privacy
+Mitigating LLM hallucinations
+Empowering LLM solutions with real-time data access
+
+Data is constantly changing in an enterprise. AI solutions that use LLMs can remain up-to-date and current with RAG, which facilitates direct access to additional data resources. These resources can consist of real-time and personalized data. 
+
+Preserving data privacy
+
+Ensuring data privacy is crucial for enterprises. With a self-hosted LLM (demonstrated in the RAG workflow), sensitive data can be kept on-premises just like the stored data. 
+
+Mitigating LLM hallucinations
+
+When LLMs are not supplied with factual actual information, they often provide faulty, but convincing responses. This is known as hallucination, and RAG reduces the likelihood of hallucinations by providing the LLM with relevant and factional information. 
+
+Building and deploying your first RAG pipeline
+
+A typical RAG pipeline consists of several phases. The process of document ingestion occurs offline, and when an online query comes in, the retrieval of relevant documents and the generation of a response occurs. 
+
+Figure 1 shows an accelerated RAG pipeline that can be built and deployed in the /NVIDIA/GenerativeAIExamples GitHub repo.
+
+Figure 1. Overview of RAG pipeline components: ingest and query flows
+
+Each logical microservice is separated into containers available in the NGC public catalog. On a high level, the architecture of a RAG system can be distilled down to the pipelines shown in Figure 1:
+
+A recurring pipeline of document pre-processing, ingestion, and embedding generation
+An inference pipeline with a user query and response generation 
+Document ingestion
+
+First, raw data from diverse sources, such as databases, documents, or live feeds, is ingested into the RAG system. To pre-process this data, LangChain provides a variety of document loaders that load data of many forms from many different sources. 
+
+The term document loader is used loosely. Source documents do not necessarily need to be what you might think of as standard documents (PDFs, text files, and so on). For example, LangChain supports loading data from Confluence, CSV files, Outlook emails, and more. LlamaIndex also provides a variety of loaders, which can be viewed in LlamaHub.
+
+Document pre-processing
+
+After documents have been loaded, they are often transformed. One transformation method is text-splitting, which breaks down long text into smaller segments. This is necessary for fitting the text into the embedding model, e5-large-v2, which has a maximum token length of 512. While splitting the text sounds simple, this can be a nuanced process. 
+
+Generating embeddings
+
+When data is ingested, it must be transformed into a format that the system can efficiently process. Generating embeddings involves converting data into high-dimensional vectors, which represent text in a numerical format. 
+
+Storing embeddings in vector databases
+
+The processed data and generated embeddings are stored in specialized databases known as vector databases. These databases are optimized to handle vectorized data, enabling rapid search and retrieval operations. Storing the data in RAPIDS RAFT accelerated vector databases like Milvus guarantees that information remains accessible and can be quickly retrieved during real-time interactions.
+
+LLMs
+
+LLMs form the foundational generative component of the RAG pipeline. These advanced, generalized language models are trained on vast datasets, enabling them to understand and generate human-like text. In the context of RAG, LLMs are used to generate fully formed responses based on the user query and contextual information retrieved from the vector DBs during user queries.
+
+Querying
+
+When a user submits a query, the RAG system uses the indexed data and vectors to perform efficient searches. The system identifies relevant information by comparing the query vector with the stored vectors in the vector DBs. The LLMs then use the retrieved data to craft appropriate responses.
+
+Fast-track your deployment of this system by testing out this example workflow in the /NVIDIA/GenerativeAIExamples GitHub repo.
+
+Get started building RAG in your enterprise
+
+By using RAG, you can provide up-to-date and proprietary information with ease to LLMs and build a system that increases user trust, improves user experiences, and reduces hallucinations.
+
+Explore the NVIDIA AI chatbot RAG workflow to get started building a chatbot that can accurately answer domain-specific questions in natural language using up-to-date information.
+
+Related resources
+GTC session: Techniques for Improving the Effectiveness of RAG Systems
+GTC session: Large-Scale Production Deployment of RAG Pipelines
+GTC session: Retrieval Augmented Generation: Overview of Design Systems, Data, and Customization
+NGC Containers: rag-application-query-decomposition-agent
+Webinar: Building Intelligent AI Chatbots Using RAG
+Webinar: Achieve World-Class Text Retrieval Accuracy for Production-Ready Generative AI
+ Discuss (1)
++52
+Like
+Tags
+Conversational AI | Generative AI | Retail / Consumer Packaged Goods | NeMo | TensorRT | Triton Inference Server | Intermediate Technical | Deep Dive | LangChain | LLMs
+About the Authors
+About Hayden Wolff
+Hayden Wolff (he/they) is a technical marketing engineer for Enterprise Products at NVIDIA. He works on integrating generative AI and LLMs into real-world applications. Prior to NVIDIA, he graduated from Tufts University with a major in computer science and a minor in science, technology, and society.
+View all posts by Hayden Wolff
+Comments
+Related posts
+Build an Agentic RAG Pipeline with Llama 3.1 and NVIDIA NeMo Retriever NIMs
+Tips for Building a RAG Pipeline with NVIDIA AI LangChain AI Endpoints
+How to Take a RAG Application from Pilot to Production in Four Steps
+Scaling Enterprise RAG with Accelerated Ethernet Networking and Networked Storage
+Video: Build a RAG-Powered Chatbot in Five Minutes
+L
+T
+F
+R
+E
+
+NVIDIA and our third-party partners use cookies and other tools to collect and record information you provide as well as information about your interactions with our websites for performance improvement, analytics, and to assist in our marketing efforts. By clicking "Accept All", you consent to our use of cookies and other tools as described in our Cookie Policy. You can manage your cookie settings by clicking on "Manage Settings". Please see our Privacy Policy for more information on our privacy practices.
+
+Reject Optional Accept All
+Manage Settings
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "market share analysis of AI search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+SKIP TO MAIN CONTENT
+SKIP TO FOOTER
+COMPANY
+SERVICES
+INDUSTRIES
+RESEARCH CENTER
+CAREERS
+GET IN TOUCH
+Top Generative AI Chatbots by Market Share – January 2025
+SEO Blog
+January 21, 2025
+
+Last Updated: January 21, 2025
+
+Our team collected data on the market share of each of the major generative AI chatbots in the U.S. as of January 21, 2025. The results are displayed in the tables below, organized by both market share and quarterly user growth. We also provide market share trend over time for the top 4 generative AI chatbots: ChatGPT, Google Gemini, Perplexity, and ClaudeAI.
+
+For the purposes of this study, the term “generative AI chatbot” refers to LLM-based web & mobile applications used by the public to seek answers or create content.
+
+Top Generative AI Chatbots by Market Share – January 2025
+	Generative AI Chatbot	Description	LLMs Used	AI Search Market Share	Estimated Quarterly User Growth
+1	ChatGPT
+(excluding Copilot)	General-purpose AI chatbot	GPT-3.5, GPT-4	59.50%	8% ▲
+2	Microsoft Copilot	General-purpose AI assistant	GPT-4	14.30%	4% ▲
+3	Google Gemini	General-purpose AI assistant	Gemini	13.40%	6% ▲
+4	Perplexity	Accuracy-focused AI search engine	Mistral 7B, Llama 2	6.00%	12% ▲
+5	Claude AI	Business-focused AI assistant	Claude 3	3.10%	15% ▲
+6	Brave Leo AI	Privacy-focused AI assistant	Mixtral 8x7B	1.20%	8% ▲
+7	Komo	Link-surfacing AI search engine	Not publicly disclosed	0.70%	6% ▲
+8	Andi	Simplicity-focused AI search engine	Not publicly disclosed	0.60%	5% ▲
+9	You.com	General-purpose AI search engine	GPT-3, GPT-4	0.40%	3% ▲
+10	Phind	AI search engine for developers	Phind-34B, Phind-70B, GPT-4	0.30%	12% ▲
+
+The Fastest Growing Generative AI Chatbots
+
+The following table displays the fastest-growing Generative AI chatbots in the US as of January 21, 2025, judged by their change in estimated users quarter-over-quarter. ChatGPT remains the market leader, but its growth has eased as both Google and Microsoft release improvements to their AI assistants. Among the startups, general purpose AI chatbots have seen slow but steady user acquisition, while specialty AI tools such as developer-focused Phind and business-focused Claud AI top our growth report.
+
+Fastest Growing Generative AI Chatbots by Market Share – January 2025
+	Generative AI Chatbot	Description	LLMs Used	AI Search Market Share	Estimated Quarterly User Growth
+1	Claude AI	Business-focused AI assistant	Claude 3	3.10%	15% ▲
+2	Perplexity	Accuracy-focused AI search engine	Mistral 7B, Llama 2	6.00%	12% ▲
+3	Phind	AI search engine for developers	Phind-34B, Phind-70B, GPT-4	0.30%	10% ▲
+4	ChatGPT
+(excluding Copilot)	General-purpose AI chatbot	GPT-3.5, GPT-4	59.50%	8% ▲
+5	Brave Leo AI	Privacy-focused AI assistant	Mixtral 8x7B	1.20%	8% ▲
+6	Google Gemini	General-purpose AI assistant	Gemini	13.40%	6% ▲
+7	Komo	Link-surfacing AI search engine	Not publicly disclosed	0.70%	6% ▲
+8	Andi	Simplicity-focused AI search engine	Not publicly disclosed	0.60%	5% ▲
+9	Microsoft Copilot	General-purpose AI assistant	GPT-4	14.30%	4% ▲
+10	You.com	General-purpose AI search engine	GPT-3, GPT-4	0.40%	3% ▲
+ChatGPT Market Share: 2025 Trend
+
+Below you will find the YTD 2025 trend of ChatGPT’s market share in the generative AI chatbot space. As the pioneer and marketplace leader, it has the most to lose, and it has seen a decline in market share this year at the hands of its many smaller competitors.
+
+NOTE: ChatGPT’s market share includes that of Bing’s Copilot product, as they both use the same underlying system; the difference is only that Microsoft Copilot personalizes ChatGPT based on user data in the Microsoft ecosystem.
+
+Month	ChatGPT Market Share
+January 2024	76.4%
+February 2024	76.1%
+March 2024	75.8%
+April 2024	75.3%
+May 2024	75.0%
+June 2024	74.9%
+July 2024	74.4%
+August 2024	74.1%
+September 2024	73.8%
+October 2024	73.6%
+November 2024	73.8%
+December 2024	73.8%
+
+Google Gemini Market Share: 2025 Trend
+
+Below you will find the YTD 2025 trend of Google Gemini’s market share in the generative AI chatbot space. It has experienced some decline in market share this year, even moreso than ChatGPT, as the fanfare around its release in December 2022 subsided. 
+
+Month	Gemini Market Share
+January 2024	16.2%
+February 2024	15.5%
+March 2024	14.8%
+April 2024	14.9%
+May 2024	14.5%
+June 2024	13.8%
+July 2024	13.3%
+August 2024	13.8%
+September 2024	13.6%
+October 2024	13.5%
+November 2024	13.5%
+December 2024	13.4%
+Perplexity Market Share: 2025 Trend
+
+Below you will find the YTD 2025 trend of Perplexity’s market share in the generative AI chatbot space. While its growth may not look significant, it has taken some market share from ChatGPT and Gemini this year. 
+
+Month	Perplexity Market Share
+January 2024	2.7%
+February 2024	2.7%
+March 2024	3.0%
+April 2024	2.9%
+May 2024	3.0%
+June 2024	3.0%
+July 2024	3.8%
+August 2024	5.3%
+September 2024	5.5%
+October 2024	5.6%
+November 2024	5.8%
+December 2024	6.0%
+ClaudeAI Market Share: 2025 Trend
+
+Below you will find the YTD 2025 trend of ClaudeAI’s market share in the generative AI chatbot space. Like Perplexity, it has contributed to the splintering of the generative AI market and loss of market share from ChatGPT and Gemini. 
+
+Month	ClaudeAI Market Share
+January 2024	2.1%
+February 2024	2.2%
+March 2024	2.4%
+April 2024	2.5%
+May 2024	2.6%
+June 2024	2.5%
+July 2024	2.5%
+August 2024	2.6%
+September 2024	2.8%
+October 2024	2.8%
+November 2024	2.9%
+December 2024	3.1%
+Requesting a Copy of This Report
+
+If you’d like a pdf copy of this report, you can reach out here.
+
+Related Reading
+Generative Engine Optimization (GEO): Explanation & Algorithm Breakdown
+Generative Engine Optimization (GEO) Strategy Guide
+Generative Engine Optimization (GEO) Cost Breakdown
+ChatGPT Optimization: 2025 Guide
+Perplexity AI Optimization: Ranking Factors and Strategy
+Sources
+Evan Bailyn
+
+Evan Bailyn is a best-selling author and award-winning speaker on the subjects of SEO and thought leadership. Contact Evan here.
+
+Learn how Thought Leadership SEO can fit into your company’s marketing strategy
+
+
+
+
+Categories
+SEO Blog
+Reports
+Business
+SEO Basics
+Thought Leadership
+SEO FAQs
+Entrepreneurship
+Marketing
+SEO ROI
+Related Content
+The Top IT & MSP SEO Agencies of 2025
+January 22, 2025
+
+In this report, we discuss the top SEO agencies in 2025 that specialize in working with MSPs and IT companies.
+
+The Top Healthcare Marketing Agencies in 2025
+January 21, 2025
+
+This article ranks the top healthcare marketing agencies in 2025.
+
+The SaaS LTV to CAC Ratio
+January 21, 2025
+
+In this article, we share the ideal LTV to CAC ratio that SaaS companies should aim for.
+
+Get in Touch
+
+Prefer talking? Call us at 855-888-SAGE
+
+©2024 Firstpagesage.com
+Services
+SEO Services
+B2B SEO Services
+SEO Consulting Services
+The Strategic SEO Plan
+Lead Generation
+B2B Lead Generation
+B2B SaaS Lead Generation
+Construction Lead Generation
+Healthcare Lead Generation
+Insurance Lead Generation
+Financial Services Lead Generation
+Law Firm Lead Generation
+Real Estate Lead Generation
+Staffing Lead Generation
+Company
+About Us
+Our Results
+Specialties
+Industries
+Locations
+Resources
+Blog
+Contact Us
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "RAG pipeline components and benefits".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Sorry, you have been blocked
+You are unable to access openxcell.com
+Why have I been blocked?
+
+This website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.
+
+What can I do to resolve this?
+
+You can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.
+
+Cloudflare Ray ID: 906a56615e4feb1c • Your IP: Click to reveal • Performance & security by Cloudflare
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "RAG pipeline components and benefits".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+sales@signitysolutions.com
+USA :  
+Services 
+Intelligent Automation
+Robotic Process Automation
+RPA in Accounts Payable
+RPA in Banking
+Testing Automation
+Marketing Automation
+Artificial Intelligence
+Custom Software Development
+AWS Cloud
+Marketing
+HubSpot Services
+Industries 
+FinTech
+Insurance
+Retail and eCommerce
+Healthcare
+Real Estate
+Logistics
+Manufacturing
+Travel
+Education
+Government
+Telecommunication
+Automotive
+Agriculture
+Oil and Gas
+Cybersecurity
+Media and Entertainment
+Solutions 
+Job Portal Development
+Digital Commerce Platform
+DXP for Fitness and Wellness
+Platforms 
+UIPath
+Adobe Experience Cloud
+Hubspot
+OpenRPA
+Marketo
+Salesforce Marketing Cloud
+Strapi - Low Code Platform
+ElasticSearch
+Zoho
+Salesforce Consulting
+Resources 
+Blog
+Case Studies
+Hubspot Knowledge Base
+Tech Insights
+Startup Chronicles
+Company 
+Contact Us
+About Us
+Life@Signity
+Careers@Signity
+Get In Touch
+Hire Developers
+Blog
+RAG
+A Comprehensive Guide for RAG Pipeline
+
+RAG has come up as an advanced way for businesses to enhance their LLM performance in order to produce accurate answers. This blog is your complete guide to understanding the RAG pipeline, components, benefits, challenges, and the step-by-step process to build and integrate it.
+
+Harjyot Kaur
+25 November 2024
+RAG
+Table of Contents
+
+With evolving AI, businesses still face one major challenge- how to ensure that AI-generated responses are accurate, relevant, and tailored to specific queries?
+
+Traditional language models rely on training data that can further lead to generic and inaccurate answers. On the other hand, the Retrieval-Augmented Generation pipeline addresses this problem by combining information retrieval and response generation.
+
+RAG development services help generate the perfect response by searching external knowledge sources to find relevant data and using large language models to produce accurate responses.
+
+This blog will help you understand everything about RAG, from its components to benefits and challenges, as well as how to build a RAG pipeline.
+
+Key Takeaways
+RAG pipelines enhance accuracy by retrieving relevant data before generating responses, reducing errors, and enabling precise, domain-specific answers.
+Steps for building a RAG pipeline include defining use cases, preprocessing data, embedding for retrieval, integrating with a language model, and refining for accuracy.
+Optimize embeddings, choose the right vector store, use effective chunking, and maintain a feedback loop to improve response relevance for smooth implementation.
+Common challenges include data consistency, model alignment, integration complexity, and error handling. Robust management and fine-tuning are essential.
+
+To begin with, we need to understand the RAG pipeline in detail.
+
+What is a RAG Pipeline?
+
+Image source
+
+RAG, or Retrieval-Augmented Generation pipeline, is a method in Artificial Intelligence that combines two steps: retrieving information and generating responses. In simple terms, it first searches a knowledge source to find relevant information based on the users’ questions.
+
+Then, it uses LLM like GPT and more to create a detailed and context-aware response. This approach helps the AI to provide accurate and informed answers, especially for complex or specific queries.
+
+Components of RAG Pipeline
+
+Components of a RAG pipeline include the following:
+
+Embedding Model
+
+It generates query embeddings from the input query, transforming the text into a dense vector representation that can be used to find relevant data in vector stores.
+
+Vector Stores
+
+This component stores and organizes embeddings for quick access and retrieval based on similarity scores. When a query is processed, vector stores help locate the most relevant documents or passages.
+
+Text Splitter and Chunking
+
+Chunking or splitting large documents into manageable sections helps the RAG pipeline efficiently process and retrieve relevant information by enabling more precise retrieval and generation.
+
+Large Language Model (LLM)
+
+Uses retrieved chunks and prompts engineering to generate responses. The LLM combines retrieved data with its own generative capabilities, guided by specific hyperparameters to balance response quality and relevance.
+
+Utility Functions and Visualization Tools
+
+Utility functions assist with tasks like scoring and ranking retrieval results, while visualization tools provide insights into retrieval and generation processes, helping users and developers understand and refine the pipeline.
+
+It is always a question of whether businesses should invest in RAG pipelines and what types of companies should. To answer this question, we have explained the benefits of RAG pipeline LLM in the section below.
+
+Master RAG Pipelines for Advanced AI Performance
+
+Learn to integrate retrieval and generation seamlessly for smarter and faster AI solutions.
+
+Get Started Now -->
+Benefits of RAG Pipelines
+
+As technology evolves, it is crucial for brands to integrate these into their daily operations in order to automate and save time and money. RAG pipeline is one such tech. Some of its vital benefits include:
+
+Contextually Relevant Responses
+
+By integrating retrieval-augmented generation, the pipeline pulls contextually relevant data from external sources. It helps provide precise answers rather than relying solely on general information from the model.
+
+Enhanced Accuracy Through Document Extraction
+
+The RAG pipeline uses document extraction to locate and leverage specific pieces of information from large datasets to ensure accurate responses even for detailed, domain-specific queries.
+
+Domain-Specific Question-Answering
+
+By retrieving external data as context, the pipeline enables domain-specific question-answering tailored to particular industries or knowledge areas, making it a highly versatile solution for specialized use cases.
+
+Reduced Hallucinations in Responses
+
+With real-time retrieval and LlamaIndex integration, the RAG pipeline reduces hallucinations (fabricated or inaccurate responses) by grounding answers in verified data rather than purely relying on the model’s assumptions.
+
+Improved Generative Capabilities with Large Language Models
+
+The RAG pipeline leverages the generative capabilities of Large Language Models (LLMs), which, combined with retrieved data, produce responses that are not only accurate but also well-structured and nuanced.
+
+Question-Answering and Real-Time Retrieval
+
+The use of TruLens enhances real-time evaluation and feedback mechanisms, allowing for more reliable question-answering in real-time retrieval scenarios.
+
+Now that you know how RAG pipelines can benefit in various ways, the next section explains how to build a RAG system.
+
+How to Build a RAG Pipeline?
+
+The next question is how to build a RAG pipeline that helps businesses solve specific problems. Here is the step-by-step process.
+
+Define Use Case and Knowledge Base
+
+The first step in building a pipeline is identifying the use cases. Determine the purpose of the RAG pipeline, such as customer support and research assistance.
+
+Once you have identified the use cases, choose or create a data source like documents, articles, or structured databases from which the pipeline will retrieve information from.
+
+Preprocess and Index Data
+
+Next, use a text splitter to divide large documents into smaller and manageable sections or “chunks” for easier retrieval. Then, an embedding model is used to convert text chunks into vector embeddings that capture semantic meaning.
+
+Once done, store these embeddings in a vector store like Pinecone, Weaviate, and FAISS for efficient similarity-based retrieval.
+
+Build the Retrieval System
+
+The next step to building a RAG pipeline is using query embedding. For each new query, you can use the same embedding model to convert it into a query embedding. Further, perform a similarity search within the vector store to retrieve the most relevant text chunks based on similarity scores.
+
+Integrate with a Language Model
+
+To integrate the pipeline with a language model, send the retrieved text chunks along with the query to an LLM, structuring it into a prompt that the model can use as context. The LLM will then generate a response, informed by the retrieved data, to ensure it is contextually accurate.
+
+Evaluate and Optimize the Pipeline
+
+Next, functions for scoring and ranking retrieved results should be added to ensure the most relevant data is used in the generation. In order to add a feedback loop, you can use tools like TruLens to adjust parameters and reduce “hallucinations.”
+
+Adjust hyperparameters to tune model settings, chunk sizes, and similarity thresholds to improve response quality and retrieval accuracy.
+
+Deploy and Monitor Performance
+
+The last step is to deploy and implement the RAG pipeline within your application or API. Further, use tools for logging and visualizing performance in order to refine the model as needed for a better user experience.
+
+Best Practices for Implementing a RAG Pipeline
+
+In order to ensure that the RAG pipeline performs well, it is important to integrate it well with the existing systems. Here are some best practices for implementing the RAG pipeline:
+
+Optimize Embedding Models for Relevance
+
+Carefully select and fine-tune your embedding model to improve the quality of retrieved data. As this model is responsible for converting text into vectors, you must choose an embedding model that aligns with your data type and domain.
+
+Select the RIght Vector
+
+Each vector has unique strengths, from speed to scalability. Hence, choosing the right vector store is essential. You must evaluate factors like latency, query speed, and integration compatibility with your existing tech stack to find the best fit.
+
+Chunk Text Strategically
+
+For smooth integration, you must also divide large documents into manageable “chunks” or segments to increase retrieval accuracy. Also, ensure that chunks are the right size and experiment with these to see which balance works best with your knowledge base.
+
+Maintain a Continuous Feedback Loop
+
+Next, keep a continuous feedback loop as it allows for regular improvements by adjusting the RAG pipeline based on user interaction and responses. It also helps address issues like hallucinations and irrelevant responses.
+
+Challenges With RAG Pipeline
+
+Integrating a RAG pipeline with the existing businesses comes along with some challenges and these include:
+
+Data Consistency
+
+Maintaining consistent and high-quality data across various sources can be challenging, especially when integrating structured and unstructured data. Inconsistent data can lead to poor retrieval results and inaccurate generative outputs.
+
+Complexity in Data Retrieval
+
+Efficiently retrieving relevant information from large and diverse datasets can be difficult. Ensuring that the retrieved data matches the user query or context is crucial for generating accurate responses.
+
+Model Alignment
+
+Aligning retrieval models with generative models requires fine-tuning to ensure that the information pulled from the database or knowledge base is properly synthesized. Misalignment can lead to irrelevant or incorrectly generated content.
+
+Integration Complexity
+
+Integrating the RAG pipeline with existing systems can be complex, especially when dealing with legacy systems or incompatible software. Ensuring seamless communication between components is key to a smooth integration process.
+
+Error Handling
+
+Errors in either the retrieval or generation phase can lead to faulty outputs or system failures. Developing a robust error-handling mechanism is crucial to prevent disruption and ensure continuous, reliable performance.
+
+Ready to Unlock the Full Potential of AI with RAG Pipelines?
+
+Step into the future of AI by mastering Retrieval-Augmented Generation for unmatched accuracy and relevance.
+
+Let's Connect -->
+Build Custom RAG Pipeline to Enhance Your LLM Performance
+
+Though RAG pipelines streamline business processes, you still need to collaborate with AI experts to build the custom solution. At Signity, we design and develop RAG pipeline LLM that empowers companies to provide accurate answers to users’ queries.
+
+Our professionals will help you, from identifying the problem to creating and integrating personalized solutions that help your business stay ahead of the competition.
+
+Get in touch with us today to discuss your requirements for RAG pipelines.
+
+-----------------------------------------------------------------------------
+
+Frequently Asked Questions
+
+Have a question in mind? We are here to answer. If you don’t see your question here, drop us a line at our contact page.
+
+What is a RAG (Retrieve and Generate) pipeline?
+
+A RAG pipeline is a machine learning architecture that combines information retrieval with generative models to produce more accurate and contextually relevant outputs, typically used for tasks like question answering and content generation.
+
+What are the stages of the RAG pipeline?
+
+What is the RAG framework?
+
+What are the benefits of using a RAG pipeline?
+
+What are the key components of a RAG pipeline?
+
+ 
+
+Unleash the Potential of RAG Pipelines
+
+Master the art of combining retrieval and generation to elevate AI performance. Start building smarter solutions today!
+
+Talk To Our Experts
+
+Get In Touch
+
+*
+Afghanistan (‫افغانستان‬‎)
+Albania (Shqipëri)
+Algeria (‫الجزائر‬‎)
+American Samoa
+Andorra
+Angola
+Anguilla
+Antigua and Barbuda
+Argentina
+Armenia (Հայաստան)
+Aruba
+Australia
+Austria (Österreich)
+Azerbaijan (Azərbaycan)
+Bahamas
+Bahrain (‫البحرين‬‎)
+Bangladesh (বাংলাদেশ)
+Barbados
+Belarus (Беларусь)
+Belgium (België)
+Belize
+Benin (Bénin)
+Bermuda
+Bhutan (འབྲུག)
+Bolivia
+Bosnia and Herzegovina (Босна и Херцеговина)
+Botswana
+Brazil (Brasil)
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria (България)
+Burkina Faso
+Burundi (Uburundi)
+Cambodia (កម្ពុជា)
+Cameroon (Cameroun)
+Canada
+Cape Verde (Kabu Verdi)
+Caribbean Netherlands
+Cayman Islands
+Central African Republic (République centrafricaine)
+Chad (Tchad)
+Chile
+China (中国)
+Colombia
+Comoros (‫جزر القمر‬‎)
+Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)
+Congo (Republic) (Congo-Brazzaville)
+Cook Islands
+Costa Rica
+Côte d’Ivoire
+Croatia (Hrvatska)
+Cuba
+Curaçao
+Cyprus (Κύπρος)
+Czech Republic (Česká republika)
+Denmark (Danmark)
+Djibouti
+Dominica
+Dominican Republic (República Dominicana)
+Ecuador
+Egypt (‫مصر‬‎)
+El Salvador
+Equatorial Guinea (Guinea Ecuatorial)
+Eritrea
+Estonia (Eesti)
+Ethiopia
+Falkland Islands (Islas Malvinas)
+Faroe Islands (Føroyar)
+Fiji
+Finland (Suomi)
+France
+French Guiana (Guyane française)
+French Polynesia (Polynésie française)
+Gabon
+Gambia
+Georgia (საქართველო)
+Germany (Deutschland)
+Ghana (Gaana)
+Gibraltar
+Greece (Ελλάδα)
+Greenland (Kalaallit Nunaat)
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guinea (Guinée)
+Guinea-Bissau (Guiné Bissau)
+Guyana
+Haiti
+Honduras
+Hong Kong (香港)
+Hungary (Magyarország)
+Iceland (Ísland)
+India (भारत)
+Indonesia
+Iran (‫ایران‬‎)
+Iraq (‫العراق‬‎)
+Ireland
+Israel (‫ישראל‬‎)
+Italy (Italia)
+Jamaica
+Japan (日本)
+Jordan (‫الأردن‬‎)
+Kazakhstan (Казахстан)
+Kenya
+Kiribati
+Kosovo
+Kuwait (‫الكويت‬‎)
+Kyrgyzstan (Кыргызстан)
+Laos (ລາວ)
+Latvia (Latvija)
+Lebanon (‫لبنان‬‎)
+Lesotho
+Liberia
+Libya (‫ليبيا‬‎)
+Liechtenstein
+Lithuania (Lietuva)
+Luxembourg
+Macau (澳門)
+Macedonia (FYROM) (Македонија)
+Madagascar (Madagasikara)
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania (‫موريتانيا‬‎)
+Mauritius (Moris)
+Mexico (México)
+Micronesia
+Moldova (Republica Moldova)
+Monaco
+Mongolia (Монгол)
+Montenegro (Crna Gora)
+Montserrat
+Morocco (‫المغرب‬‎)
+Mozambique (Moçambique)
+Myanmar (Burma) (မြန်မာ)
+Namibia (Namibië)
+Nauru
+Nepal (नेपाल)
+Netherlands (Nederland)
+New Caledonia (Nouvelle-Calédonie)
+New Zealand
+Nicaragua
+Niger (Nijar)
+Nigeria
+Niue
+Norfolk Island
+North Korea (조선 민주주의 인민 공화국)
+Northern Mariana Islands
+Norway (Norge)
+Oman (‫عُمان‬‎)
+Pakistan (‫پاکستان‬‎)
+Palau
+Palestine (‫فلسطين‬‎)
+Panama (Panamá)
+Papua New Guinea
+Paraguay
+Peru (Perú)
+Philippines
+Poland (Polska)
+Portugal
+Puerto Rico
+Qatar (‫قطر‬‎)
+Réunion (La Réunion)
+Romania (România)
+Russia (Россия)
+Rwanda
+Saint Barthélemy (Saint-Barthélemy)
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin (Saint-Martin (partie française))
+Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+São Tomé and Príncipe (São Tomé e Príncipe)
+Saudi Arabia (‫المملكة العربية السعودية‬‎)
+Senegal (Sénégal)
+Serbia (Србија)
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia (Slovensko)
+Slovenia (Slovenija)
+Solomon Islands
+Somalia (Soomaaliya)
+South Africa
+South Korea (대한민국)
+South Sudan (‫جنوب السودان‬‎)
+Spain (España)
+Sri Lanka (ශ්‍රී ලංකාව)
+Sudan (‫السودان‬‎)
+Suriname
+Swaziland
+Sweden (Sverige)
+Switzerland (Schweiz)
+Syria (‫سوريا‬‎)
+Taiwan (台灣)
+Tajikistan
+Tanzania
+Thailand (ไทย)
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia (‫تونس‬‎)
+Turkey (Türkiye)
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Virgin Islands
+Uganda
+Ukraine (Україна)
+United Arab Emirates (‫الإمارات العربية المتحدة‬‎)
+United Kingdom
+United States
+Uruguay
+Uzbekistan (Oʻzbekiston)
+Vanuatu
+Vatican City (Città del Vaticano)
+Venezuela
+Vietnam (Việt Nam)
+Wallis and Futuna
+Yemen (‫اليمن‬‎)
+Zambia
+Zimbabwe
+Related Posts
+Understanding RAG: Architecture, Techniques, Use Cases, & Development
+RAG vs. Fine-Tuning: Choosing the Right Approach for Your LLM
+RAG in Financial Services
+Quick Links
+Our Work
+Hire Developers
+Contact Us
+Resources
+Services
+Devops
+Mobility Solutions
+Robotic Process Automation
+Testing Automation
+Custom Web Development
+AWS Development Services
+HubSpot Development Services
+Platforms
+Elasticsearch Services
+Marketo Integration Services
+UIPath
+Adobe Experience Cloud
+Hubspot
+OpenRPA
+Company
+Blog
+About Us
+Life @ Signity
+Careers@Signity
+Privacy Policy
+   
+Copyright © 2024 Signity Software Solutions. All Rights Reserved.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "AI search engine market trends 2025".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Editorial Channels
+Marketing & CX Leadership
+Customer Experience
+AI in Customer Experience
+Modern Customer Service
+Contact Centers
+Voice of the Customer
+Digital Experience
+Digital Experience Platforms (DXPs)
+Hyper-Personalization
+Journey Orchestration
+Customer Data Platforms
+Digital Asset Management
+Modern Ecommerce
+View All Topics
+Podcasts
+CX Decoded Podcast
+Research
+Research Reports
+White Papers
+View All
+Events
+Webinars
+Conferences
+View All
+About Us
+Editorial Calendar
+IMPACT Awards
+CX Decoded Podcast
+CMSWire Mobile App
+Press Releases
+Product Directory
+Advertise Here
+Become a Contributor
+JOIN US
+Marketing & CX Leadership
+
+CMSWire's Marketing & Customer Experience Leadership channel is the go-to hub for actionable research, editorial and opinion for CMOs, aspiring CMOs and today's customer experience innovators. Our dedicated editorial and research teams focus on bringing you the data and information you need to navigate today's complex customer, organizational and technical landscapes. We've got you covered.
+
+EDITORIAL
+Can AI Be Your Best Friend? Replika Thinks So
+Read now
+EDITORIAL
+Why You Need a Chief Experience Officer — the Right One
+Read now
+INTERVIEW
+Goodbye Cost Centers, Hello Value Contact Centers
+Read now
+Write the EOY Checks: 6 Smart Ways to Spend Unused Marketing Budget
+Marketing Trends Predictions: Did Generative AI and I Agree?
+10 Google Analytics Metrics to Track for Marketing Success
+TikTok Ban: Your Next Best Social Media Marketing Strategy Moves
+5 Predictions for the Artificial Intelligence Roadmap
+Interoperability’s Role in Creating a Successful Digital Transformation Strategy
+EXPLORE THE MARKETING & CX LEADERSHIP CHANNEL
+WEBINARS
+RESEARCH
+IMPACT AWARDS
+EVENTS CALENDAR
+PODCASTS
+EDITORIAL CALENDAR
+ADVERTISING
+JOIN US
+EDITORIAL
+Preparing for 2025: Will AI Search Be the David to Google's Goliath?
+4 MINUTE READ
+By Dustin Engel
+DECEMBER 18, 2024
+DIGITAL MARKETING
+SHARE
+Share
+Copy link
+Email
+LinkedIn
+Twitter
+Facebook
+Telegram
+SAVE
+SAVED
+AI-powered search engines are disrupting traditional search and creating new opportunities for marketers in an increasingly fragmented digital landscape.
+The Gist
+Changing search landscape. AI-powered search engines are reshaping the search landscape and offering more personalized answers than traditional search paradigms.
+Shift in consumer behavior. Younger generations are moving away from traditional search engines and favoring platforms like TikTok and Instagram for discovery.
+Marketing strategy evolution. As search engines fragment, marketers must adapt by embracing multi-channel strategies and rethinking their martech and adtech stacks.
+
+The digital search landscape is entering a period of dramatic change, one that could rival Google’s ascension two decades ago. The rise of AI-powered search engines like OpenAI’s ChatGPT and Perplexity, along with Google’s own Gemini, is forcing businesses and marketers to reexamine their strategies. Users are increasingly drawn to platforms that offer more personalized, direct answers, which presents a challenge for traditional search paradigms.
+
+To add even more complexity, younger generations are bypassing search engines altogether, and they favor discovery through platforms like TikTok and Instagram. Nearly 40% of Gen Z users now prefer social media platforms over traditional search engines for discovery. For marketers, these shifts bring both opportunity and risk. They raise fundamental questions about the future of digital advertising and its reliance on Google’s dominance.
+
+Is Google at Risk From AI-Powered Search Engines?
+
+Google’s hold on the search market, while still commanding, is showing early signs of strain. Its global market share, which was 93.37% in early 2023, has declined to 89.33% as of October 2024. This erosion comes as privacy-conscious consumers and those seeking AI-powered alternatives explore new options. AI-native platforms like SearchGPT and Perplexity are reshaping search by answering longer, more complex queries with greater nuance.
+
+Google has countered these challengers with its own innovations, including AI-powered overviews that now reach over a billion users monthly. Yet, industry analysts, including Gartner, predict that by 2026, web traffic from traditional search engines could drop by 25% as AI-driven tools gain traction. This paints an uncertain future for a company that has shaped the core infrastructure of the digital advertising ecosystem.
+
+Related Article: Will AI-Powered Search Engines Ultimately End Traditional Search?
+
+The Potential Upside of Google’s Decline in Search
+
+For years, marketers have voiced frustration over the disproportionate weight of their budgets funneled to a few major players, primarily Google and Meta. In theory, the rise of AI-powered search engines and a more fragmented search landscape could create healthier competition and create new advertising opportunities across diverse platforms.
+
+However, there’s a catch: Much of the marketing and advertising technology ecosystem — spanning martech tools, adtech platforms and campaign strategies — is built around Google’s dominance. If Google’s position weakens significantly, these investments may lose their effectiveness, and this could force marketers to retool everything from analytics to ad delivery mechanisms.
+
+This uncertainty raises critical questions for businesses: How do you pivot strategies that are deeply embedded in the Google ecosystem? Can your marketing technology stack keep pace with shifting consumer behavior and a more diversified search environment? While the potential benefits of competition are appealing, the risks of disruption are equally significant.
+
+What Should Marketers Do Next?
+
+The fragmentation of search is already reshaping consumer behavior. Research shows users increasingly utilize platforms like TikTok for search, while traditional search engines have experienced a 9% decline in initial queries. For marketers, this diversification presents both challenges and opportunities.
+
+Embrace Multi-Channel Strategies: As search splinters, marketers must distribute efforts across multiple platforms, from Reddit and Quora to emerging social and AI-driven tools.
+Prepare for Platform-Specific Investments: Each platform demands unique strategies tailored to user behavior, ad formats and engagement styles.
+Rethink Martech and Adtech Alignments: Teams must evaluate their technology stacks for adaptability and make sure they remain effective across a broader range of platforms.
+
+Interestingly, this shift could also reduce reliance on monopolistic ad pricing. Diversifying platforms may introduce fairer competition for ad placement, potentially lowering customer acquisition costs. However, this will require marketers to invest in advanced analytics and automation to navigate a more complex ecosystem effectively.
+
+Related Article: Voice Search Optimization: The Role of AI in the New SEO Landscape
+
+How AI-Powered Search Engines Are Reshaping Marketing
+
+The rise of AI-powered search engines is transforming both customer experience and marketing strategies, and it’s challenging Google's long-standing dominance. This shift could create a more competitive advertising landscape filled with new opportunities.
+
+Learning Opportunities
+WEBINAR
+FEB
+11
+The Future of Behavioral Intelligence: Improving CX with Dynamic Data
+Join industry leaders to discuss dynamic data benefits for CX/EX vs. traditional feedback methods.
+Register
+WEBINAR
+FEB
+19
+Unified Data: The Competitive Edge for Marketers
+Join our webinar to discover how to fuel your success with data that works together. Register now!
+Register
+WEBINAR
+FEB
+26
+Master Omnichannel Engagement for Seamless Customer Experiences
+Bridge the gaps between channels and create customer journeys that inspire loyalty.
+Register
+WEBINAR
+MAR
+5
+Supercharge Your B2B Website in 2025: What It Takes to Win
+Build a future-ready B2B site that captivates and converts. Register now!
+Register
+CONFERENCE
+MAR
+31
+Forrester B2B Summit North America Phoenix 2025
+Register
+CONFERENCE
+JUN
+2
+Gartner Marketing Symposium/Xpo Denver 2025
+Register
+VIEW ALL
+
+However, it also poses risks, as distancing from Google could disrupt existing digital infrastructure, requiring marketers to adapt or fall behind. Success will hinge on experimentation, investment in specific strategies and leveraging AI and alternative search platforms. As 2025 approaches, marketers must prepare to thrive in a landscape where the future is uncertain.
+
+ Learn how you can join our contributor community.
+
+About the Author
+
+Dustin is a seasoned executive and consultant with a proven track record in strategy, marketing, and operations. He has extensive experience scaling businesses and leading companies to successful exits while fostering winning cultures. Connect with Dustin Engel: 
+
+Main image: tsuguliev on Adobe Stock
+Tags
+searchgpt
+dxm
+google
+social media
+gemini
+ai search
+digital marketing
+ai
+Featured Research
+GUIDE
+Top 5 CX Insights That Should Be Driving Your Strategy
+What can you learn from billions of interactions? Boundless opportunity.
+Read now
+WHITE PAPER
+Why Your Contact Center Needs a Copilot
+Better CX requires a partner in precision. Contact center providers who have no plan for copilots should re-evaluate.
+Read now
+EBOOK
+Does Your CX Have a DIY Problem?
+Why DIY search solutions may cost more than you think (and how to avoid common pitfalls)
+Read now
+RESEARCH REPORT
+Generative AI in 2024: Separating the Hype from Reality
+Get industry-specific insights and actionable strategies from over 2,500 business leaders involved in AI decision-making
+Read now
+GUIDE
+Best Practices to Close the Gap Between Generative AI’s Promise and Reality
+Learn how to maximize the effectiveness, accuracy, and value of your generative AI investments while creating new pathways for innovation.
+Read now
+EBOOK
+Strategy Guide: How to Build the Perfect Customer Service Journey
+Start revolutionizing workflows, supercharging agents in real time and unifying data with an AI-driven platform like CXone Mpower.
+Read now
+ON-DEMAND WEBINAR
+Turn Your Agents into AI-Powered Multilingual Pros
+No internal translator? No problem. Provide customer service in 150+ languages with your existing team.
+Read now
+RESEARCH REPORT
+AI Reality Check: Why Strategy Beats Speed in Tech Adoption
+Bad CX will cost you, but so will implementing AI without a use-case. Learn what the experts recommend before you proceed.
+Read now
+EBOOK
+Unlocking Customer Insights: The Role of AI and Open-Text Analysis in CX Success
+Transform Your Customer Experience With AI-Powered Text Analysis
+Read now
+WHITE PAPER
+From Digital Chaos to Customer Bliss: How to Create Optimal Customer Experiences
+Expert advice on advancing digital maturity in marketing organizations
+Read now
+GUIDE
+The 10-Step Guide to Accurate Market Research
+Uncover proven strategies to empower your respondents to provide honest and thoughtful feedback
+Read now
+MARKET GUIDE
+Customer Data Platforms Market Guide
+Get the help you need when choosing a CDP
+Read now
+VIEW ALL RESEARCH
+Most Read Today
+EDITORIAL
+DIGITAL MARKETING
+Will ChatGPT Search Change Everything in SEO?
+EDITORIAL
+DIGITAL MARKETING
+What XMail’s Launch Could Mean for Email Marketers
+EDITORIAL
+DIGITAL MARKETING
+How AI Tools for Marketing Drive Efficiency and Creativity
+ABOUT CMSWIRE
+
+For over two decades CMSWire, produced by Simpler Media Group, has been the world's leading community of digital customer experience professionals.
+
+Today the CMSWire community consists of over 5 million influential customer experience, customer service and digital experience leaders, the majority of whom are based in North America and employed by medium to large organizations.
+
+Our sister community, Reworked, gathers the world's leading employee experience and digital workplace professionals. And our newest community, VKTR, is home for AI practitioners and forward thinking leaders focused on the business of enterprise AI.
+
+EXPLORE CMSWIRE
+CX Decoded Podcast
+CMSWire IMPACT Awards
+Customer Experience Research
+Purchase Reports
+CMSWire Editorial Calendar
+State of Customer Experience Report
+Become a CMSWire Contributor
+The Wire (Press Releases)
+CMSWire Advertising & Sponsorship
+POPULAR ARTICLES
+6 Worst Marketing Campaigns of All Time
+Will ChatGPT Search Change Everything in SEO?
+Types of Social Media Influencers: Mega, Macro, Micro and Nano
+The Absolute Top Moments From NRF 2025: Retail's Big Show
+UK's Google Search Investigation Could Reveal Google’s AI Secrets
+What XMail’s Launch Could Mean for Email Marketers
+EDITORIAL CHANNELS
+AI in Customer Experience
+Customer Data Management
+Customer Experience Practices
+Contact Centers
+Digital Experience Leadership
+Digital Experience Stacks
+Ecommerce
+Hyper-Personalization
+Marketing Automation
+Voice of the Customer
+JOIN THE COMMUNITY
+
+Not yet a CMSWire member? We serve over 5 million of the world's top customer experience practitioners. Join us today — unlock member benefits and accelerate your career, all for free.
+
+JOIN US
+GET THE CMSWIRE MOBILE APP
+Published by Simpler Media Group, Inc.
+Explore our Family of Brands
+Privacy|
+Terms|
+Contact|
+Sitemap|
+Advertising
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "impact of AI on traditional search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+www.vktr.com
+
+Verifying you are human. This may take a few seconds.
+
+www.vktr.com needs to review the security of your connection before proceeding.
+Ray ID: 906a565f49176ab5
+Performance & security by Cloudflare
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "impact of AI on traditional search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+www.perplexity.ai
+
+Verifying you are human. This may take a few seconds.
+
+www.perplexity.ai needs to review the security of your connection before proceeding.
+Ray ID: 906a565ffd38cf06
+Performance & security by Cloudflare
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "impact of AI on traditional search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Search the TechTarget Network
+Browse Definitions :
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+#
+Login Register
+TechTarget Network
+Tech Accelerator
+News
+2024 IT Salary Survey Results
+RSS
+WhatIs
+BROWSE DEFINITIONS
+Artificial intelligence
+BROWSE FEATURESResources
+Follow: 
+Home Artificial intelligence
+
+PUTILOV_DENIS - STOCK.ADOBE.COM
+
+PUTILOV_DENIS - STOCK.ADOBE.COM
+
+FEATURE
+GenAI search vs. traditional search engines: How they differ
+Search engines are the original way to browse the internet. GenAI search is a new method to explore and get answers to queries. Learn how it compares to traditional searches.
+By
+Sean Michael Kerner
+Published: 11 Dec 2024
+
+In the early days of the internet, it became clear that some form of technology was needed to help users navigate and find information as traffic began to surge. This led to the emergence of the first search engines, which helped users find content on the growing internet.
+
+For most of the history of the internet, search has been predicated on the same basic process: Content is indexed to match keyword queries. With the advent of generative AI, the search landscape began to shift in a meaningful way for the first time in decades. GenAI search enables users to get results that include more and are not limited to keyword relevance. With GenAI search, large language models (LLMs) provide answers instead of only a page of results.
+
+Multiple providers have entered the GenAI search market in recent years. Startups such as Perplexity AI have come into the space with entirely new GenAI search services. OpenAI, the vendor behind ChatGPT, entered the space with its ChatGPT search. Existing search vendors, including Google and Microsoft, have also offered AI options. Google has its AI Overviews technology, and Microsoft Bing has also integrated GenAI augmented search. Meta is also reportedly exploring GenAI search for its social media platforms.
+
+What are GenAI search engines?
+
+GenAI search engines are an evolution of search engine technology.
+
+The primary defining innovation and characteristic of GenAI search engines is the use of LLMs to deliver a different type of experience than a traditional search engine. A GenAI search engine uses the LLM to understand, retrieve and generate responses to user queries. A regular LLM generates answers to user queries based on the knowledge available up to its training cutoff date, limiting its ability to provide information beyond that point.
+
+In contrast, a GenAI search engine has no such knowledge cutoff and can use up-to-date information, similar to a regular search engine, to generate responses. GenAI search engines combine machine learning and natural language processing to understand user queries semantically.
+
+The use of an LLM provides a series of different benefits and capabilities, including the following:
+
+Interprets user intent from natural language queries with more accuracy.
+Provides direct answers to queries, instead of only links to resources.
+Offers detailed explanations and clarifications.
+Combines and integrates information from multiple sources to deliver comprehensive responses.
+Engages in follow-up conversations with options for related topics and queries.
+How do GenAI searches work?
+
+GenAI searches work similarly to how an LLM normally works but with some notable distinctions -- most significantly, the incorporation of updated information.
+
+The basic procedures involved in GenAI searches include the following:
+
+Query input. The user enters a query in natural language. The system processes the query by performing tasks such as tokenization and key phrase identification.
+Intent and understanding. The GenAI search technology not only looks at the user query in terms of the words used, but it also attempts to understand the user's intent for the query. The intent is to understand what the user wants to do with the query. For example, is the intent of the query informational, navigational or transactional?
+Information retrieval. The GenAI search system uses its knowledge base data set to answer the user's query. That knowledge base includes the pretrained LLM and updated real-time web crawling.
+Response generation. A response is generated that best matches the user query and intent. The generated response is refined for accuracy, relevance and coherence. The AI search engine structures its response in a coherent and readable format. It may include relevant citations or links to source material. Some systems also include expandable sections or follow-up question suggestions.
+Feedback and continuous learning. Many GenAI search engines incorporate feedback mechanisms to improve performance over time. That feedback can be implicit or explicit from the user on the quality of the search results.
+How do traditional search engines work?
+
+Traditional search engines, such as Google's core search index, operate on a different principle compared to GenAI search engines. Traditional search engines help users find the best answers to their queries by offering links to relevant sources.
+
+The basic process behind how traditional search engines work includes the following:
+
+Crawling. The first stage involves automated web crawlers, or bots, that scan the internet for web content. These crawlers systematically browse the web to discover new and updated pages.
+Parsing and analysis. Once a crawler discovers web content, it analyzes the structural elements of the page, such as title tags, meta descriptions, headings and body text. This analysis helps the crawler identify and extract links to other pages.
+Indexing. The discovered pages are analyzed and categorized based on their content, keywords and other parsed data.
+Ranking. The search engine uses complex algorithms to rank the indexed pages based on the relevance to the query and the quality. One example of a ranking algorithm is Google's PageRank, which has undergone numerous updates and changes over the last two decades.
+Search engine results page (SERP). The relevant results of the user query are ranked and presented on a SERP. Each result typically includes a title, URL, and brief description or snippet.
+Key differences between GenAI searches vs. traditional search engines
+
+There are numerous key differences between GenAI search and traditional search engine approaches.
+
+Aspect	GenAI search engines	Traditional search engines
+Response	Direct, conversational responses	List of links with snippets
+Content generation	Can create original content on the fly	Only retrieve existing information
+Query understanding	Advanced understanding of natural language and user intent	Primarily keyword-based with some semantic understanding
+Contextual awareness	Maintain context throughout a conversation	Has limited context awareness -- each query treated separately
+Information synthesis	Can combine information from multiple sources	Present separate results from different sources
+Update frequency	Can incorporate recent information	Depend on web crawling and indexing cycles
+Personalization	Can tailor responses based on conversation history	Personalize based on user data and search history
+AI's impact on SEO
+
+For nearly as long as search engines have existed, individuals and organizations have focused on search engine optimization. SEO attempts to improve a webpage and its content to achieve a higher ranking in search results.
+
+The rise of AI-powered search engines is impacting SEO strategies in significant ways, including the following:
+
+Keywords aren't enough. SEO strategies that are focused solely on keyword optimization may become less effective as search engines provide more conversational and context-aware results. With AI's ability to understand context and intent, the focus shifts even more toward creating high-quality, informative content that directly addresses user needs.
+Natural language needs to be optimized. SEO strategies now need to consider natural language patterns and conversational queries.
+Driving traffic is more challenging. With traditional search engines, SEO was often seen as a straight line to getting better ranking, leading to clicks and traffic. With GenAI search, that's no longer guaranteed. With summarized answers, simple queries may not lead to clicks or publisher traffic. What's needed is more detailed information than a simple summary can provide. SEO and traffic optimization need to do more to be successful.
+The future of search and AI
+
+Traditional search engines have been on the internet for over two decades. Over that time frame, the traditional search engines have iterated many times to keep delivering the best results for users. The path for search and AI will likely be the same with continued evolution and iteration.
+
+As these technologies continue to evolve, the market should expect to see the following:
+
+More personalized results. AI will likely provide increasingly highly customized search experiences based on user preferences and behaviors. That goes beyond the current versions that understand basic context and user intent.
+Enhanced multimodal search. Much like LLMs are on a multimodal path, future AI search engines will likely better integrate text, image, voice and video search capabilities.
+Improved accuracy. As AI models are refined and training data expands, the accuracy and reliability of AI-generated responses will likely improve.
+Publisher engagement. With traditional AI search engines, publishers typically welcome web crawlers as they help to drive traffic. With GenAI search, where clicks and web traffic are not guaranteed, it becomes increasingly important for publishers and GenAI search technologies to strike content agreements. Perplexity AI is starting to engage with some publishers, though others -- such as The New York Times, which filed a lawsuit against the GenAI search vendor -- are not welcoming collaboration.
+
+Sean Michael Kerner is an IT consultant, technology enthusiast and tinkerer. He has pulled Token Ring, configured NetWare and been known to compile his own Linux kernel. He consults with industry and media organizations on technology issues.
+
+Next Steps
+
+ChatGPT search vs. Google: How do they differ?
+
+Related Resources
+AI in Human Resources: Revolutionizing Talent Acquisition and Management
+–Talk
+FRAUDS WITH AI
+–Talk
+Personalized BI Insights Using Artificial Intelligence
+–Talk
+Security Risks to Consider with AI Integration: AI in DevOps
+–Replay
+Dig Deeper on Artificial intelligence
+What are Google's AI Overviews (formerly SGE)?
+By: Kinza Yasar
+ChatGPT search: Details about OpenAI's search engine
+By: Sean Kerner
+What is search engine optimization (SEO)?
+By: Kinza Yasar
+7 popular tech side hustles in 2024
+By: Alison Roller
+Sponsored News
+Sustainability, AI and Dell PowerEdge Servers
+–Dell Technologies and Intel
+Dell Technologies GenAI-validated Designs and Dell Reference Designs
+–Dell Technologies and Intel
+A Generative AI Use Case Brought to Life with Solutions from Dell Technologies
+–Dell Technologies and Intel
+Related Content
+Generative AI's effect on content management systems
+– Search Content Management
+ChatGPT search: Details about OpenAI's search engine
+– WhatIs
+What are Google's AI Overviews (formerly SGE)?
+– WhatIs
+Latest TechTarget
+resources
+NETWORKING
+SECURITY
+CIO
+HR SOFTWARE
+CUSTOMER EXPERIENCE
+Search Networking
+What is the Universal Service Fund (USF)?
+
+The Universal Service Fund (USF) is a United States government program that supports telecommunications access and affordability ...
+
+What is network management?
+
+Network management is a multifaceted discipline that provides network administrators with the tools, protocols and processes to ...
+
+What is network downtime?
+
+Network downtime refers to inaccessibility to part or all of a network due to the failure of hardware, software or some ...
+
+Browse by Topic Browse Resources
+About Us Meet The Editors Editorial Ethics Policy Contact Us Advertisers Business Partners Events Media Kit Corporate Site Reprints
+
+All Rights Reserved, Copyright 1999 - 2025, TechTarget
+
+Privacy Policy
+Cookie Preferences
+Do Not Sell or Share My Personal Information
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "impact of AI on traditional search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+SEO
+PPC
+Platforms
+Guides
+Tools
+Resources
+SMX
+Newsletter
+Try Semrush
+
+Search Engine Land » SEO » How AI will affect the future of search
+
+How AI will affect the future of search
+Explore the transformative role of AI in search engines and discover how it will affect the future of search, shaping marketing strategies.
+Julia McCoy on January 8, 2024 at 9:00 am | Reading time: 8 minutes
+     Chat with SearchBot
+
+Artificial intelligence (AI) is revolutionizing the digital landscape – leaving no room for outdated SEO tactics. As search engines increasingly leverage AI to anticipate user intent, we must completely rethink our strategies and balance human creativity and AI efficiency to stay ahead. 
+
+Let’s explore the innovations, opportunities and pitfalls to master as AI propels search into a new era.
+
+Search evolution: Prioritizing intent over keywords
+
+The era of keyword stuffing is over, replaced by a focus on user intent. 
+
+Search engines have evolved to understand the context behind queries. This shift demands a change in SEO strategies – prioritizing creativity and relevance over mere keyword density.
+
+Today’s SEO is about aligning with user goals and pain points, not just keyword counts. Including elements like location-based services and personalized recommendations turns searches into dynamic interactions between users and your content.
+
+Embracing semantic search
+
+Incorporating semantic search requires a mix of data analytics and empathetic writing. This approach focuses on delivering relevant and valuable insights, aligning with E-E-A-T guidelines for expertise and trustworthiness.
+
+In this new landscape, keyword research remains valuable but as part of a wider strategy. It’s about creating meaningful interactions and standing out in a digital world filled with information overload.
+
+Consider Google’s BERT algorithm. It uses natural language processing to understand the real intent behind a search. This is a leap from simple keyword matching to predictive, context-aware results. 
+
+This essentially means AI doesn’t just improve search – it anticipates our needs, often before we articulate them. 
+
+AI does more than just understand user intent. It also brings personalization to search engines. 
+
+By analyzing past user data like location and search history, AI can predict the future preferences of search engine users.
+
+AI’s transformative role in SEO
+
+AI is a pivotal force in digital marketing, making it important for content creators to understand the technology. 
+
+It involves machine learning algorithms that analyze data to predict relevant content for search queries. 
+
+With search engines like Google and Bing employing AI to enhance result accuracy, marketers must understand AI’s impact to remain competitive.
+
+Leveraging AI for advanced content strategies
+
+AI tools offer more than just enhancements to current strategies. 
+
+They enable optimization through trend identification and advanced analytics. These tools provide insights into strategy performance, like click-through rates and page engagement. 
+
+AI also suggests improvements based on user behavior, revolutionizing content optimization by revealing new opportunities and offering data-driven recommendations for continuous enhancement.
+
+The balance between man and machine: The future trend?
+
+Despite AI’s advancements, the need for human narrative crafting remains. 
+
+This balance is where concepts like AIO and my C.R.A.F.T framework become crucial, merging machine learning with human intuition to produce compelling, search engine-friendly content.
+
+Artificial intelligence optimization (AIO) in content creation
+
+AI’s role in content creation marks a new era. Enter AIO writers.
+
+It starts with AI drafting content, embedding keywords, and aligning with search engine results pages. But AI alone is not enough. A human writer trained in AIO takes over next. They take AI drafts and make them better. 
+
+These optimized pieces attract readers and meet the criteria of modern search algorithms. They keep the language and brand voice unique.
+
+The interesting thing about this model isn’t just about quantity. I am talking about accuracy and trustworthiness, which are essential for any high E-E-A-T content strategy. 
+
+Marketers who embrace AIO in their strategy are leading the way – not keeping up.
+
+Synergy of AI and human expertise in SEO
+
+AI boosts efficiency, but the nuanced touch of human writing brings depth and appeal to the content. This collaborative process involves using AI for initial drafts and human skills for final refinements. 
+
+Today, creating SEO-friendly content requires a careful approach. AI lays a solid groundwork, but human skill is what makes content stand out.
+
+What C.R.A.F.T. is all about
+
+I developed the C.R.A.F.T. framework to steer content creators in a rapidly changing digital environment, especially when working with AI-generated content. 
+
+AI writing isn’t ready to publish as is. It lacks your personal experiences, client insights, and unique tone.
+
+That’s where C.R.A.F.T. comes in. It empowers writers to infuse AI content with these essential human elements and ensures your content reflects you and your audience.
+
+Here’s what it looks like. 
+
+Cut the fluff
+
+C.R.A.F.T. centers on concise, impactful writing. Eliminating excess words is essential in today’s information-saturated world. 
+
+This approach aligns with Google Search Essentials (formerly Webmaster Guidelines), which prioritizes valuable content for users.
+
+Review, edit, optimize
+
+Transform good writing into great communication. Refine syntax and strategically integrate keywords, balancing SEO with reader appeal.
+
+Add images, visuals, media
+
+You need visuals. They enrich your text and help explain complex ideas. Alt tags and clear visuals also contribute to SEO by enhancing user experience and search indexing. 
+
+Fact-check your content
+
+Fact-checking establishes authority and combats misinformation. Truth is our responsibility as creators, reflecting Google’s E-E-A-T principles.
+
+Trust-build
+
+This involves adding personal stories and authoritative links to build trust with your readers.
+
+Get the newsletter search marketers rely on.
+
+Business email address
+Sign me up!
+
+See terms.
+
+Generative AI’s role in search results
+
+Generative AI is redefining content ranking based on quality. This advancement challenges traditional SEO tactics, as algorithms can now create and assess content unprecedentedly.
+
+Elevating quality standards across the board
+
+In this competitive arena, high-quality standards become paramount. 
+
+Google’s evolving algorithm updates now prioritize relevant, original and useful content – mirroring the objectives of generative AI.
+
+This shift calls for stringent fact-checking and authenticity in content creation. 
+
+Enhancing user experience through AI
+
+Generative AI impacts more than just search rankings. It influences creative storytelling, tone differentiation, and user engagement metrics. 
+
+The narrative around facts enhances user experience, as authoritative links within content add credibility.
+
+However, despite AI’s advanced capabilities, the essential human element in content creation cannot be overlooked.
+
+The blend of technology and the innate human touch in crafting compelling narratives is irreplaceable.
+
+Adapting to AI-driven search engine marketing
+
+The future of search engine marketing is rapidly evolving with AI advancements. Marketers must stay informed and prepare for this change. Here are key strategies:
+
+Stay updated on AI trends: Keep abreast of the latest AI developments. Subscribe to trade publications and engage in professional discussions about AI trends and technologies. 
+Understand AI challenges: Recognize AI’s opportunities and pitfalls. Generative AI, while promising, raises concerns like misinformation. Up to 80% of marketers will need teams dedicated to countering AI-generated misinformation by 2027, Gartner predicts.
+Consider copyright concerns: Copyright issues are paramount with generative AI. After the 2023 ruling by the U.S. Copyright Office, navigating copyright becomes more complex, especially with AI-generated content. The ruling reminds us to make sure we humanly edit AI-generated output to maintain the human stamp and ownership of our content.
+Be aware of regulatory changes: Monitor the evolving regulatory landscape for AI technologies. Anticipate and prepare for inevitable regulatory actions affecting AI use.
+
+Marketers need to stay informed, understand challenges, navigate copyright issues, and maintain regulatory awareness to thrive in the AI-driven future of search engine marketing.
+
+Integrating human expertise with AI in search technology
+
+Merging human expertise with AI is becoming crucial in optimizing for search. 
+
+This combination is not just helpful – it’s essential to master modern search algorithms.
+
+AI brings immense processing power but lacks human-like, nuanced understanding. Marketers need to use their insights to refine AI results. This leads to a more focused approach that matches user intent, boosting efficiency.
+
+This fusion also helps predict consumer behavior shifts that data alone might miss. Combining metrics with human empathy ensures digital strategies connect personally with users.
+
+Creativity and predictive analytics: A powerful duo
+
+Creativity is a core human factor and the key to standing out in a crowded market. 
+
+When blended with AI’s predictive analytics, creativity becomes both original and data-driven, maximizing impact.
+
+We see this partnership in action when analyzing metrics like click-through rates. Human creativity is the factor to lean into to build interest and curiosity, while AI can optimize reach based on these insights.
+
+Making better decisions with AI and human insight 
+
+AI is great at quickly spotting patterns helping in SEO decision-making. 
+
+But without human strategic oversight, AI alone might miss opportunities that need human cultural understanding or trend identification.
+
+Professionals must use AI tools to enhance, not replace, their decision-making. This approach allows for quick yet well-thought-out strategic choices.
+
+Shaping the future of search with AI
+
+AI is reshaping search. It’s changing how we create content, adapt to algorithms, and stay ahead in marketing. The future of search isn’t just about keywords – it’s about understanding and utilizing AI.
+
+Remember the milestones that got us here. Keep my C.R.A.F.T framework handy as you refine your SEO approach: Cut through the noise, enhance with custom visuals, and build trust with authentic stories.
+
+Understand how to function in the role of AIO – AIOs are not just helpers; they’re co-creators. Generative AI is not a threat but an ally for those who learn to collaborate effectively.
+
+The takeaway? How AI will affect the future of search hinges on our ability to blend human ingenuity with machine efficiency. Master this, and the way forward is bright. 
+
+Get the newsletter search marketers rely on.
+
+Business email address
+Sign me up!
+
+See terms.
+
+Contributing authors are invited to create content for Search Engine Land and are chosen for their expertise and contribution to the search community. Our contributors work under the oversight of the editorial staff and contributions are checked for quality and relevance to our readers. The opinions they express are their own.
+
+Add Search Engine Land to your Google News feed.    
+
+Related stories
+
+Google sending manual actions for site reputation abuse in Europe?
+Take your career to the next level: Become a search marketing master
+App Store vs. Google Play: Tailoring your ASO strategy for maximum impact
+From search to social: Retargeting organic traffic with video strategies
+This is not a drill: SMX Advanced is returning to in-person in 2025
+
+New on Search Engine Land
+
+Google updates search quality raters guidelines with a focus on spam
+Brave Search Rerank lets you boost or remove sites from search results
+Google expands Performance Max asset/search term reporting capabilities
+How would a Google breakup impact SEO?
+Google’s Vidhya Srinivasan to lead Ads & Commerce teams
+
+About the author
+
+Contributor
+Julia McCoy
+Julia McCoy is a 9x author and founder who scaled and sold a 100-person writing agency to become a trailblazer in AI adaption. She empowers businesses to dominate in the AI revolution on her podcast, Leaders in AI, and in her AI integration consultancy, FirstMovers.ai.
+
+Related topics
+
+ContentSEO
+
+
+
+Get the newsletter search marketers rely on.
+
+Business email address
+Sign me up!
+
+See terms.
+
+Attend our events 
+
+Learn actionable search marketing tactics that can help you drive more traffic, leads, and revenue.
+
+Online March 2025: SMX Master Classes
+
+
+
+
+Discover time-saving technologies and actionable tactics that can help you overcome crucial marketing challenges.
+
+Free 14 day Semrush trial
+
+Get 55+ tools to gain insights and grow your audience.
+
+START MY TRIAL
+LEARN MORE
+Webinars
+
+Realize Your Creative Vision in 2025
+
+Data-Driven Strategies for Retail Success
+
+Your Guide to Reporting and Measurement on Connected TV
+
+See more webinars
+Intelligence reports
+
+Customer Data Platforms: A Marketer’s Guide
+
+Marketing Automation Platforms: A Marketer’s Guide
+
+Enterprise SEO Platforms: A Marketer’s Guide
+
+See more intelligence reports
+Featured white paper
+
+Conversion Benchmark Report 2024
+
+See more white papers
+Search our site
+Search the Search Engine Land site
+Search
+SearchBot
+
+Meet your new AI-powered marketing assistant!
+
+Start chatting now!
+
+We use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see our
+
+Cookie Policy.
+
+Allow all cookies
+Deny all
+Cookie settings
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "market share analysis of AI search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+SEO
+PPC
+Platforms
+Guides
+Tools
+Resources
+SMX
+Newsletter
+Try Semrush
+
+Search Engine Land » SEO » ChatGPT’s search surge: 1% market share predicted by 2025
+
+ChatGPT’s search surge: 1% market share predicted by 2025
+ChatGPT today just made ChatGPT search now available to all free ChatGPT users. Could this help further fuel adoption of ChatGPT search?
+Danny Goodwin on December 16, 2024 at 4:47 pm | Reading time: 2 minutes
+     Chat with SearchBot
+
+Could ChatGPT search have a 1% share of the search market by sometime next year? Yes, according to new internal data that enterprise SEO platform shared today with Search Engine Land.
+
+“For the first time we can see a trajectory where ChatGPT could cross the magic 1% market share threshold sometime next year,” according to Jim Yu, founder and executive chair of BrightEdge.
+
+Why we care. AI search is evolving quickly. It is important to watch how people adopt AI search because it may alter the way people discover you, your brand, or your website. We’re watching it happen, month after month, right now. And with ChatGPT search now available to all free users, this growth could further accelerate.
+
+ChatGPT vs. Perplexity. ChatGPT is now 6x larger than Perplexity, according to an LLM referral analysis of November traffic by BrightEdge. Also, search traffic from ChatGPT (up 44%) and Perplexity (up 71%) continues to grow month over month.
+
+But. Google is still far and away the leader, with 92.4% of referral traffic coming from Google. Meanwhile, Microsoft Bing’s market share was 4.2% in November.
+
+Wait… Maybe you heard that Rand Fishkin, CEO and co-founder of SparkToro, last month estimated ChatGPT’s search market share was 4.33%, based on data from SimilarWeb and Datos (a Semrush company)? How is there such a big difference and confusion over the market share numbers?
+
+Well, this BrightEdge analysis is based on referral data. Also, Fishkin later downplayed the 4% figure during his BrightonSEO keynote, because not every prompt/chat is a “search.”
+
+So if you heard that ChatGPT’s search market share is 4%, you can safely call that stat wrong and disregard it.
+
+Add Search Engine Land to your Google News feed.    
+
+Related stories
+
+Google sending manual actions for site reputation abuse in Europe?
+Take your career to the next level: Become a search marketing master
+App Store vs. Google Play: Tailoring your ASO strategy for maximum impact
+From search to social: Retargeting organic traffic with video strategies
+This is not a drill: SMX Advanced is returning to in-person in 2025
+
+New on Search Engine Land
+
+Google updates search quality raters guidelines with a focus on spam
+Brave Search Rerank lets you boost or remove sites from search results
+Google expands Performance Max asset/search term reporting capabilities
+How would a Google breakup impact SEO?
+Google’s Vidhya Srinivasan to lead Ads & Commerce teams
+
+About the author
+
+Staff
+Danny Goodwin
+Danny Goodwin is Editorial Director of Search Engine Land & Search Marketing Expo - SMX. He joined Search Engine Land in 2022 as Senior Editor. In addition to reporting on the latest search marketing news, he manages Search Engine Land’s SME (Subject Matter Expert) program. He also helps program U.S. SMX events.
+
+Goodwin has been editing and writing about the latest developments and trends in search and digital marketing since 2007. He previously was Executive Editor of Search Engine Journal (from 2017 to 2022), managing editor of Momentology (from 2014-2016) and editor of Search Engine Watch (from 2007 to 2014). He has spoken at many major search conferences and virtual events, and has been sourced for his expertise by a wide range of publications and podcasts.
+
+Related topics
+
+BingChatGPTGenerative Engine Optimization (GEO)GoogleSEO
+
+
+
+Get the newsletter search marketers rely on.
+
+Business email address
+Sign me up!
+
+See terms.
+
+Attend our events 
+
+Learn actionable search marketing tactics that can help you drive more traffic, leads, and revenue.
+
+Online March 2025: SMX Master Classes
+
+
+
+
+Discover time-saving technologies and actionable tactics that can help you overcome crucial marketing challenges.
+
+Free 14 day Semrush trial
+
+Get 55+ tools to gain insights and grow your audience.
+
+START MY TRIAL
+LEARN MORE
+Webinars
+
+Realize Your Creative Vision in 2025
+
+Data-Driven Strategies for Retail Success
+
+Your Guide to Reporting and Measurement on Connected TV
+
+See more webinars
+Intelligence reports
+
+Customer Data Platforms: A Marketer’s Guide
+
+Marketing Automation Platforms: A Marketer’s Guide
+
+Enterprise SEO Platforms: A Marketer’s Guide
+
+See more intelligence reports
+Featured white paper
+
+Conversion Benchmark Report 2024
+
+See more white papers
+Search our site
+Search the Search Engine Land site
+Search
+SearchBot
+
+Meet your new AI-powered marketing assistant!
+
+Start chatting now!
+
+Get the newsletter search marketers rely on.
+
+Business email address
+Sign me up!
+
+Topics
+
+SEO
+PPC
+Platforms
+All topics
+SearchBot
+
+Our events
+
+Search Marketing Expo - SMX
+MarTech
+
+Semrush
+
+Semrush coupon
+Semrush offer
+
+About
+
+About us
+Contact
+Privacy
+Terms
+AI policy
+Marketing opportunities
+Staff
+Login
+
+Follow us
+
+Facebook
+X (formerly Twitter)
+LinkedIn
+Newsletters
+RSS
+YouTube
+
+© 2025 Search Engine Land is a Trademark of Semrush Inc.
+
+Third Door Media operates business-to-business media properties and produces events, including SMX. It is the publisher of Search Engine Land, the leading digital publication covering the latest search engine optimization (SEO) and pay-per-click (PPC) marketing news, trends and advice. The company headquarters is 800 Boylston Street, Suite 2475, Boston, MA USA 02199.
+
+We use cookies to run our website, analyze your use of our services, manage your online preferences & personalize ad content. By accepting our cookies, you'll get relevant content and social media features, personalized ads, and an enhanced browsing experience. To manage your choices, click “Cookie Settings.” Necessary cookies are required for the core website functionality and cannot be rejected. For more information, see our
+
+Cookie Policy.
+
+Allow all cookies
+Deny all
+Cookie settings
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Requirements
+1. Utilize the text in the "Reference Information" section to respond to the question "market share analysis of AI search engines".
+2. If the question cannot be directly answered using the text, but the text is related to the research topic, please provide a comprehensive summary of the text.
+3. If the text is entirely unrelated to the research topic, please reply with a simple text "Not relevant."
+4. Include all relevant factual information, numbers, statistics, etc., if available.
+
+### Reference Information
+Product
+Plans
+About
+Resources
+Blog
+Try It Free Log In
+Is Google Losing Search Market Share?
+By Rand FishkinOctober 7, 2024
+
+A recent Wall Street Journal made the top of feeds in the digital marketing world, claiming that Google is on the precipice of losing the lead in the search advertising wars. Supposedly, in 2025, for the first time, Google may fall under 50% of market share in search advertising (according to an eMarketer report the WSJ cites).
+
+The WSJ points to three factors: the rise of TikTok, the growth of AI search engines (Perplexity is prominently mentioned), and the antitrust pressure Google faces in their monopoly trial.
+
+But… on investigation of the data, I think all of these wrong, and digital marketers should be wary of being misled by hypothetical causes vs. what’s really going on…
+
+Transcript
+
+This article right here, was at the top of my LinkedIn feed. It was, notable in my threads feed. It was in Twitter, which I I rarely check. But this Wall Street Journal article is really interesting.
+
+I I’m gonna show you. It it seemed a little fishy to me as well, and that’s because when I read it, it sort of made the case that, AI search like like chat g p t and perplexity in particular are taking market share away from Google search advertising revenue. Not search market share, search advertising revenue and TikTok as well. Now, as a percentage of digital, search is shrinking a tiny bit.
+
+I I thought I would interrogate the core assess assertions that that the article is making because because I found it so fishy. And, this from the Winterberry group, this year was I think I think pretty a pretty decent assessment. It might be off by a little bit, but you can see search is still growing. Right?
+
+So search advertising, we’re talking about bidding on keywords.
+
+This is on Google and Bing, but also potentially on perplexity which which according to Wall Street Journal has not launched search advertising yet but will and TikTok which has but it’s very very nascent and not a lot of people, search TikTok. They they mostly But it’s still growing. Right? So search advertising is not declining, therefore, that’s not the cause.
+
+I also tried to figure out if Google search market share is somehow in jeopardy. And according to our latest data, it’s Datos, our clickstream provider. Right? I did a big study, back in the spring.
+
+Certainly does not look that way. And stat counter confirms that Google is basically as strong as it’s ever been. What you see right here is very close to ninety percent. I think it’s eighty eight percent, market share in the United States and more than ninety percent globally.
+
+Google stock did take a little bit of a beating over the summer, but to be honest, so did every major tech stock, and and a lot of the S and P five hundred overall. So that that didn’t seem to be what was driving this.
+
+We looked at the data as well. So I did a recent webinar with Datos, and we looked at, whether people who search Google are switching to AI search engines. Right? Lots of people in your LinkedIn feed are probably telling you that they are especially in b to b software world and tech world. Well, you can see here that, the percent who use only traditional search engines, never used, any AI engine is eighty three percent.
+
+And by August twenty twenty four almost seventeen percent of people in Datos’ panel at least which is which is millions of users worldwide and and and some millions, in the US.
+
+Seventeen percent as of August, so that’s pretty high, but ninety nine percent of those AI users also use Google. On average, users are searching Google two hundred times per month which is up from last year.
+
+So that suggests Google search advertising business should be stronger not weaker. Now you can see that the searches per search user declined from May to August. That’s actually just seasonality. That’s pretty typical.
+
+You can see the that search MAUs on Amazon. We’re also lower in August, and that is, again, because people are buying fewer things, during the non school year during the summer.
+
+But if TikTok is this threat that the Wall Street Journal is making it out to be, why aren’t they calling out, look at DuckDuckGo. It’s way up here. Right? And August was stronger for it in at least in monthly active users.
+
+EBay should have been mentioned in there. Right? Walmart. These are all ahead of TikTok, and perplexity is way down here. Granted, perplexity is small. They’re growing faster.
+
+But, for ChatchieBT and for perplexity, we looked at the number of times people search per month. It’s thirteen and a half or sixteen and a half. So it’s it’s just doesn’t add up. Right?
+
+Like, yes, these platforms are growing, but perplexity grew from, you know, whatever thirteen percent to seventeen percent, it grew from twelve to sixteen. So maybe in ten years if they continue their growth at the current rate, they might be a challenge to Google. But right now, something’s weird. So what the heck is going on here?
+
+So I looked at the study. Right? Because because, the Wall Street Journal quotes eMarketer in saying that Google’s share of search advertising will be under fifty percent for the first time in a decade.
+
+Take a look at this. So they’re they’re probably right. This was twenty twenty three, this is twenty twenty four, and so twenty twenty five will probably be right around fifty percent, it could be under fifty percent. What’s happening? Oh, Amazon is growing a little bit and other is growing a little bit.
+
+Well that that is not what the article suggested.
+
+It didn’t it barely mentioned Amazon, here’s where search advertising, search advertising spend is going. Right? Sorry. All digital advertising spend is going, and you can see that in search advertising Amazon is the one that’s growing. Look at this, they’re growing faster, right, than Google is growing in terms of percentage, but they’re actually growing fewer dollars. So Google is growing more dollar wise, it’s just that Amazon’s growing faster as a percent because they were a smaller percent before.
+
+That’s not much of a story.
+
+I guess Amazon is selling more ads because they’re not actually growing their number of searches seasonally adjusted by all that much.
+
+But what we can see is that I went back in time and looked at the previous, you know, decade and look look back in twenty eighteen. Right? Google’s, market share of all search advertising was around seventy percent and then it fell by, you know, I guess this this slope ended up being sharper than was expected in March of twenty twenty three when the study was put together. And as for net revenue, you know, you can see them at in the seventies, and now Amazon has grown, Microsoft has grown a little bit, Yelp has grown a little bit. Others have entered.
+
+My my big takeaway actually is that if you look at the other bucket, that’s the most interesting bucket, but it’s not TikTok and AI. It’s Walmart and Instacart and Spotify and Apple and Hulu, to to be frank. Right? Like, these companies which did not previously have significant advertising revenue, digital advertising revenue, and offerings because Walmart and Instacart in particular got grouped into search advertising because people use keywords to search for them. That’s where a lot of that growth is coming from, and it’s nipping away at Google’s heels, but Google continues to grow.
+
+So I I don’t know whether I call this a non story, but I think this is why media literacy and data literacy is so important. Because if you just see the Wall Street Journal’s headline in your feed, you’re gonna think to yourself, oh man, is Google dying? Are they losing search market share? And that’s not what’s going on, and that’s why it pays to interrogate these, articles and and question what’s really happening.
+
+Subscribe to the SparkToro Blog
+Get Posts Via Email
+Email: 
+Subscribe
+Additional Reading
+ How to Fight Back Against a Traffic-Less Web
+Stop Making Your Team Own Tasks. Let Them Own Programs Instead. 
+Keep up with
+SparkToro®
+ @SparkToro
+ @SparkToroHQ
+ @SparkToro
+ @SparkToro
+ @SparkToro
+API Lost & Founder Support Resources Blog RSS
+Privacy Policy Terms of Service Do Not Sell My Personal Information CA Privacy Rights
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+******************************
+[Query]
+### Reference Information
+url: https://ahrefs.com/blog/best-ai-search-engines/
+summary: ### AI搜索引擎市场趋势（2025年）
+
+根据Ryan Law在2024年12月19日的文章，AI搜索引擎市场在2025年将继续发展，主要趋势包括：
+
+1. **AI与传统搜索引擎的融合**：尽管AI搜索引擎如ChatGPT Search和Perplexity等在特定查询上表现出色，但传统搜索引擎（如谷歌和必应）凭借其多年的经验和强大的数据处理能力，仍然占据市场主导地位。未来，预计将看到更多传统搜索引擎与AI技术的整合，以提升用户体验。
+
+2. **用户行为的变化**：AI搜索引擎能够提供更为个性化和互动的搜索体验，尤其是在处理复杂和长尾查询时。用户可能会逐渐习惯于与AI进行对话式搜索，而不仅仅是输入关键词。
+
+3. **市场竞争加剧**：随着越来越多的公司进入AI搜索引擎市场，竞争将变得更加激烈。虽然目前谷歌占据了88.5%的市场份额，但新兴的AI搜索引擎可能会吸引一部分用户，尤其是在特定领域（如新闻和研究）表现优异的情况下。
+
+4. **技术进步与算力需求**：AI搜索引擎的性能依赖于强大的算力和先进的算法。随着技术的进步，算力需求将持续增长，尤其是在处理大规模数据和实时搜索结果时。
+
+5. **用户体验的优化**：AI搜索引擎在提供信息的相关性、准确性和速度方面仍有提升空间。未来的搜索引擎将更加注重用户体验，努力减少错误和信息过时的问题。
+
+### 目前的技术栈（搜索流程及RAG管道）
+
+在AI搜索引擎的技术栈中，RAG（Retrieval-Augmented Generation）管道是一个重要的组成部分。以下是RAG管道的详细流程：
+
+1. **信息检索（Retrieval）**：
+   - **数据源**：从多个数据源（如网页、数据库、文档等）中提取信息。
+   - **索引构建**：对数据进行索引，以便快速检索。
+
+2. **生成（Generation）**：
+   - **模型选择**：使用预训练的语言模型（如GPT系列）生成自然语言响应。
+   - **上下文理解**：根据用户查询的上下文生成相关的回答。
+
+3. **后处理（Post-processing）**：
+   - **结果过滤**：对生成的结果进行过滤，确保信息的准确性和相关性。
+   - **用户反馈**：根据用户的反馈不断优化模型和检索算法。
+
+### 算力需求报告
+
+AI搜索引擎的算力需求主要取决于以下几个因素：
+
+1. **模型规模**：大型语言模型（如GPT-4）需要大量的计算资源进行训练和推理，通常需要数百到数千个GPU进行并行处理。
+
+2. **数据处理**：实时处理和检索海量数据需要高效的存储和计算架构，通常采用分布式计算和云服务。
+
+3. **用户并发量**：随着用户数量的增加，搜索引擎需要能够处理大量并发请求，这对服务器的性能和带宽提出了更高的要求。
+
+### 详细分析
+
+1. **谷歌**：
+   - **优势**：强大的数据处理能力和丰富的搜索功能，尤其在商业和本地搜索方面表现优异。
+   - **劣势**：AI功能的应用相对有限，用户互动性不足。
+
+2. **Perplexity.ai**：
+   - **优势**：在新闻和复杂信息的总结方面表现突出。
+   - **劣势**：存在错误和信息过时的问题，用户体验不如传统搜索引擎。
+
+3. **OpenAI SearchingGPT**：
+   - **优势**：在处理长尾查询和用户互动方面表现优异。
+   - **劣势**：在图像和商业查询方面的表现较差。
+
+4. **字节豆包**：
+   - **优势**：在本地搜索和社交媒体整合方面具有潜力。
+   - **劣势**：市场认知度和用户基础相对较低。
+
+综上所述，AI搜索引擎市场在2025年将继续演变，传统搜索引擎与AI技术的结合将成为主要趋势，用户体验和算力需求将是未来发展的关键因素。
+---
+url: https://www.cmswire.com/digital-marketing/preparing-for-2025-will-ai-search-be-the-david-to-googles-goliath/
+summary: ### AI搜索引擎市场趋势分析（2025年）
+
+随着AI技术的快速发展，AI驱动的搜索引擎正在重塑传统搜索市场，并为营销人员创造新的机会。以下是对2025年AI搜索引擎市场趋势的详细分析：
+
+#### 1. 搜索市场的变化
+AI驱动的搜索引擎（如OpenAI的ChatGPT和Perplexity）正在改变用户获取信息的方式，提供比传统搜索引擎更个性化的答案。用户越来越倾向于使用这些平台，而不是依赖于传统的搜索引擎。
+
+#### 2. 消费者行为的转变
+年轻一代（尤其是Z世代）正在逐渐放弃传统搜索引擎，转而使用TikTok和Instagram等社交媒体平台进行信息发现。数据显示，近40%的Z世代用户更喜欢通过社交媒体进行搜索，而不是使用传统搜索引擎。
+
+#### 3. 市场份额的变化
+谷歌在搜索市场的主导地位正在受到挑战。2023年初，谷歌的全球市场份额为93.37%，到2024年10月下降至89.33%。这种下降主要是由于消费者对隐私的关注以及对AI驱动替代方案的探索。
+
+#### 4. 未来的预测
+行业分析师预测，到2026年，传统搜索引擎的网络流量可能会下降25%，这将对谷歌的核心数字广告生态系统产生重大影响。
+
+#### 5. 营销策略的演变
+随着搜索引擎的分化，营销人员需要适应新的多渠道策略，重新思考他们的营销技术（martech）和广告技术（adtech）堆栈。具体建议包括：
+- **多渠道策略**：在多个平台（如Reddit、Quora等）上分配营销资源。
+- **平台特定投资**：根据不同平台的用户行为和广告格式制定独特的策略。
+- **重新评估技术堆栈**：确保技术堆栈能够适应更广泛的平台。
+
+#### 6. 竞争的潜在好处
+AI驱动的搜索引擎的崛起可能会促进更健康的竞争，降低客户获取成本。然而，这也要求营销人员在分析和自动化方面进行更多投资，以有效应对更复杂的生态系统。
+
+### 结论
+随着2025年的临近，AI搜索引擎的崛起将对传统搜索市场产生深远影响。营销人员必须准备好在不确定的未来中蓬勃发展，利用AI和替代搜索平台的机会，同时应对潜在的风险和挑战。
+---
+url: https://lakefs.io/blog/what-is-rag-pipeline/
+summary: RAG（检索增强生成）管道是一种结合了信息检索和生成模型的技术，旨在提高大型语言模型（LLMs）的性能和实用性。以下是RAG管道的组成部分及其优势：
+
+### RAG管道的组成部分
+1. **检索模块**：负责从数据库或文档中检索相关信息，以补充生成模型的输入。
+2. **生成模块**：使用检索到的信息与用户输入结合，生成更为准确和上下文相关的响应。
+3. **数据管理**：确保检索到的数据是最新的，并且与业务需求相符。
+4. **反馈机制**：通过用户反馈不断优化检索和生成的过程，以提高系统的整体性能。
+
+### RAG管道的优势
+- **提高准确性**：通过结合外部数据源，生成的内容更加准确和相关。
+- **增强上下文理解**：检索模块提供的背景信息使得生成模型能够更好地理解用户的意图。
+- **灵活性**：可以根据不同的业务需求和数据源进行定制，适应性强。
+- **持续学习**：通过反馈机制，系统能够不断学习和改进，提升用户体验。
+
+RAG管道的实施虽然面临一些挑战，如数据整合和实时性要求，但其带来的商业价值和用户满意度提升使其成为值得投资的技术。
+---
+url: https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/
+summary: ### RAG Pipeline 组件与优势
+
+RAG（检索增强生成）管道是将大型语言模型（LLM）与企业数据相结合的一种技术，旨在提高AI应用的响应能力和准确性。RAG管道的主要组件包括：
+
+1. **文档摄取**：从各种来源（如数据库、文档或实时数据流）摄取原始数据。使用LangChain等工具，可以加载多种格式的数据，包括Confluence、CSV文件和Outlook邮件等。
+
+2. **文档预处理**：对加载的文档进行转换，例如文本分割，将长文本分解为更小的段落，以适应嵌入模型的最大令牌长度。
+
+3. **生成嵌入**：将数据转换为高维向量，以便系统能够高效处理。这些嵌入表示文本的数值格式。
+
+4. **存储嵌入**：将处理后的数据和生成的嵌入存储在专门的向量数据库中，这些数据库优化了向量化数据的处理，确保信息在实时交互中能够快速检索。
+
+5. **查询处理**：当用户提交查询时，RAG系统使用索引数据和向量进行高效搜索，识别相关信息，并利用LLM生成适当的响应。
+
+RAG的优势包括：
+
+- **实时数据访问**：通过RAG，AI解决方案能够保持最新状态，直接访问额外的数据资源。
+- **数据隐私保护**：使用自托管的LLM，敏感数据可以保持在本地，确保数据隐私。
+- **减少LLM幻觉**：RAG通过提供相关和真实的信息，降低了LLM生成错误但看似合理的响应的可能性。
+
+通过RAG，企业能够构建出更具用户信任度和更优质用户体验的AI系统，同时减少幻觉现象的发生。
+---
+url: https://www.signitysolutions.com/blog/rag-pipeline
+summary: ### RAG Pipeline 组件与优势
+
+RAG（Retrieval-Augmented Generation）管道是一种结合信息检索与生成模型的机器学习架构，旨在提高生成输出的准确性和上下文相关性。RAG管道的主要组件包括：
+
+1. **嵌入模型（Embedding Model）**：将输入查询转换为密集的向量表示，以便在向量存储中查找相关数据。
+   
+2. **向量存储（Vector Stores）**：存储和组织嵌入，以便根据相似性分数快速访问和检索。当处理查询时，向量存储帮助定位最相关的文档或段落。
+
+3. **文本分割与切块（Text Splitter and Chunking）**：将大型文档分割成可管理的小部分，以提高检索效率，使得信息检索和生成更加精确。
+
+4. **大型语言模型（Large Language Model, LLM）**：使用检索到的文本块和提示工程生成响应。LLM结合检索数据与自身的生成能力，确保生成的回答既准确又有深度。
+
+5. **实用功能与可视化工具（Utility Functions and Visualization Tools）**：实用功能帮助评分和排名检索结果，而可视化工具提供检索和生成过程的洞察，帮助用户和开发者理解和优化管道。
+
+#### RAG管道的优势
+
+- **上下文相关的响应**：通过集成检索增强生成，管道从外部来源提取上下文相关的数据，提供精确的答案，而不是仅依赖于模型的通用信息。
+  
+- **通过文档提取增强准确性**：RAG管道利用文档提取技术，从大型数据集中定位和利用特定信息，确保即使是详细的领域特定查询也能得到准确的响应。
+
+- **领域特定的问答能力**：通过检索外部数据作为上下文，管道能够针对特定行业或知识领域提供量身定制的问答服务，适用于多种专业用例。
+
+- **减少响应中的幻觉**：通过实时检索和LlamaIndex集成，RAG管道减少了幻觉（虚构或不准确的响应），使答案基于经过验证的数据，而不是仅依赖于模型的假设。
+
+- **与大型语言模型的生成能力相结合**：RAG管道利用大型语言模型的生成能力，结合检索到的数据，生成的响应不仅准确，而且结构良好、细致入微。
+
+- **问答与实时检索**：使用TruLens增强实时评估和反馈机制，使得在实时检索场景中提供更可靠的问答能力。
+
+通过这些组件和优势，RAG管道能够显著提升AI系统的性能，确保生成的内容更加准确和相关。
+---
+url: https://www.techtarget.com/whatis/feature/GenAI-search-vs-traditional-search-engines-How-they-differ
+summary: AI对传统搜索引擎的影响主要体现在以下几个方面：
+
+1. **搜索方式的转变**：传统搜索引擎依赖于关键词匹配，通过索引内容来回应用户查询。而生成式AI（GenAI）搜索引擎则利用大型语言模型（LLMs）来理解用户意图，提供更为直接和对话式的回答，而不仅仅是链接列表。这种转变使得用户能够获得更全面和深入的信息。
+
+2. **信息检索的效率**：GenAI搜索引擎能够实时更新信息，结合机器学习和自然语言处理技术，提供更准确的查询理解和信息检索。这与传统搜索引擎的爬虫和索引周期相比，显著提高了信息的时效性和相关性。
+
+3. **SEO策略的变化**：随着AI搜索引擎的兴起，传统的搜索引擎优化（SEO）策略面临挑战。关键词优化不再是唯一的关注点，内容的质量和用户需求的直接满足变得更加重要。此外，AI搜索引擎的回答可能会减少用户点击链接的需求，从而影响网站流量。
+
+4. **个性化和多模态搜索的增强**：AI技术的进步使得搜索引擎能够提供更加个性化的搜索体验，未来的搜索引擎可能会更好地整合文本、图像、语音和视频搜索能力。
+
+5. **出版商与AI搜索引擎的关系**：传统搜索引擎通常受到出版商的欢迎，因为它们能够驱动流量。然而，GenAI搜索引擎的出现使得流量不再是必然的结果，这促使出版商与AI搜索技术之间需要建立新的内容合作关系。
+
+总的来说，AI的引入正在重塑搜索引擎的功能和用户体验，推动搜索技术向更智能、更个性化的方向发展。
+---
+url: https://searchengineland.com/ai-future-search-436277
+summary: 人工智能（AI）正在彻底改变数字环境，传统的搜索引擎也在这一过程中经历着深刻的变革。AI的引入使得搜索引擎能够更好地理解用户意图，从而推动了搜索策略的重新思考。以下是AI对传统搜索引擎影响的几个关键方面：
+
+1. **用户意图优先**：传统的关键词堆砌时代已经结束，搜索引擎现在更注重理解查询背后的上下文。这一转变要求SEO策略从单纯的关键词密度转向关注用户的目标和痛点。
+
+2. **语义搜索的兴起**：AI的应用使得搜索引擎能够进行语义搜索，利用自然语言处理技术（如谷歌的BERT算法）来理解用户的真实意图。这种能力使得搜索结果不仅仅是简单的关键词匹配，而是能够预测和满足用户的需求。
+
+3. **个性化搜索体验**：AI通过分析用户的历史数据（如位置和搜索历史）来预测用户的未来偏好，从而提供更加个性化的搜索结果。这种个性化的体验提升了用户的满意度和参与度。
+
+4. **内容创作的变革**：AI在内容创作中的应用标志着一个新纪元的到来。AI可以生成初步的内容草稿，但仍需人类创作者进行优化和润色，以确保内容的准确性和可信度。这种人机协作的模式使得内容不仅具备数量，还具备质量。
+
+5. **提高内容质量标准**：随着生成式AI的兴起，内容的质量标准变得更加严格。搜索引擎的算法更新开始优先考虑相关性、原创性和实用性，这与生成式AI的目标相一致。
+
+6. **人机协作的重要性**：尽管AI在处理数据和优化搜索结果方面表现出色，但人类的直觉和创造力仍然是不可或缺的。将AI的处理能力与人类的洞察力相结合，可以更好地满足用户的需求。
+
+7. **应对AI带来的挑战**：随着AI技术的发展，市场营销人员需要了解AI的机遇与挑战，包括生成内容的版权问题和潜在的错误信息传播。
+
+总之，AI正在重塑搜索引擎的未来，推动着内容创作、用户体验和市场营销策略的变革。为了在这个快速变化的环境中保持竞争力，市场营销人员必须不断学习和适应AI技术的发展。
+---
+url: https://www.businessinsider.com/google-search-ad-market-share-perplexity-ai-openai-chatgpt-2024-10
+summary: ### AI搜索引擎市场分析
+
+根据eMarketer的预测，谷歌在美国的搜索广告市场份额可能在明年首次降至50%以下，这标志着其在过去十年中的主导地位面临挑战。AI技术的崛起，尤其是OpenAI的ChatGPT和Perplexity AI等工具，正在改变用户的搜索习惯，年轻一代用户（如Z世代和Alpha世代）开始不再使用“谷歌”作为动词，而是直接使用“搜索”这一术语。
+
+#### 主要竞争者分析
+
+1. **谷歌（Google）**
+   - 仍然是使用最广泛的搜索引擎，但面临来自AI搜索引擎的激烈竞争。
+   - 在2023年推出了Gemini，这是其自有的大型语言模型，旨在以自然语言展示搜索结果。
+   - 谷歌正在利用AI技术更好地展示搜索结果中的广告。
+
+2. **Perplexity AI**
+   - 在2023年9月处理了3.4亿个查询，吸引了多个顶级广告商。
+   - 估值超过10亿美元，获得了杰夫·贝索斯和英伟达的投资。
+   - 其搜索引擎通过与用户的对话式互动来增强用户体验，并计划在未来允许赞助商在后续问题中投放广告。
+
+3. **OpenAI的SearchingGPT**
+   - 作为AI搜索引擎的代表，利用大型语言模型为用户提供自然语言的回答。
+   - 其用户基础在推出后迅速增长，成为消费应用中增长最快的产品之一。
+
+4. **字节豆包**
+   - 目前没有具体的市场份额数据，但作为字节跳动旗下的产品，可能会利用其在社交媒体和短视频领域的优势来吸引用户。
+
+### 未来趋势
+
+- **市场份额变化**：谷歌的市场份额可能会继续下降，AI搜索引擎将逐渐占据更大的市场份额。
+- **用户习惯转变**：年轻用户的搜索习惯正在改变，可能会影响未来的广告投放策略。
+- **广告模式创新**：AI搜索引擎可能会引入新的广告模式，例如通过对话式互动来吸引用户。
+
+### 目前的技术栈（搜索流程）
+
+#### RAG Pipeline（Retrieval-Augmented Generation Pipeline）
+
+1. **数据检索（Retrieval）**
+   - 使用大型语言模型从海量数据中检索相关信息。
+   - 结合用户查询，快速找到最相关的文档或信息。
+
+2. **生成（Generation）**
+   - 基于检索到的信息生成自然语言回答。
+   - 通过上下文理解和语言生成技术，提供准确且流畅的回答。
+
+3. **反馈循环（Feedback Loop）**
+   - 收集用户反馈，优化检索和生成模型。
+   - 持续改进用户体验和搜索结果的相关性。
+
+### 算力需求报告
+
+- **谷歌**：作为行业领导者，谷歌拥有强大的计算基础设施，支持其AI模型的训练和推理。
+- **Perplexity AI**：由于其快速增长的用户基础，预计需要不断扩展其计算资源，以处理大量的查询和广告请求。
+- **OpenAI**：其大型语言模型的训练和推理需要高性能的计算资源，尤其是在处理复杂查询时。
+- **字节豆包**：具体的算力需求尚未公开，但作为字节跳动的一部分，预计会利用其现有的计算资源。
+
+综上所述，AI搜索引擎市场正在经历快速变化，谷歌的主导地位受到挑战，新的竞争者如Perplexity AI和OpenAI正在崛起，未来的市场格局将更加多元化。
+---
+url: https://firstpagesage.com/reports/top-generative-ai-chatbots/
+summary: ### AI搜索引擎市场分析
+
+截至2025年1月，主要的生成式AI聊天机器人市场份额分析如下：
+
+1. **ChatGPT**（不包括Copilot）
+   - **市场份额**：59.50%
+   - **季度用户增长**：8%
+   - **使用的LLM**：GPT-3.5, GPT-4
+
+2. **Microsoft Copilot**
+   - **市场份额**：14.30%
+   - **季度用户增长**：4%
+   - **使用的LLM**：GPT-4
+
+3. **Google Gemini**
+   - **市场份额**：13.40%
+   - **季度用户增长**：6%
+   - **使用的LLM**：Gemini
+
+4. **Perplexity**
+   - **市场份额**：6.00%
+   - **季度用户增长**：12%
+   - **使用的LLM**：Mistral 7B, Llama 2
+
+5. **Claude AI**
+   - **市场份额**：3.10%
+   - **季度用户增长**：15%
+   - **使用的LLM**：Claude 3
+
+6. **Brave Leo AI**
+   - **市场份额**：1.20%
+   - **季度用户增长**：8%
+   - **使用的LLM**：Mixtral 8x7B
+
+7. **Komo**
+   - **市场份额**：0.70%
+   - **季度用户增长**：6%
+   - **使用的LLM**：未公开
+
+8. **Andi**
+   - **市场份额**：0.60%
+   - **季度用户增长**：5%
+   - **使用的LLM**：未公开
+
+9. **You.com**
+   - **市场份额**：0.40%
+   - **季度用户增长**：3%
+   - **使用的LLM**：GPT-3, GPT-4
+
+10. **Phind**
+    - **市场份额**：0.30%
+    - **季度用户增长**：10%
+    - **使用的LLM**：Phind-34B, Phind-70B, GPT-4
+
+### 未来趋势
+
+- **市场竞争加剧**：ChatGPT虽然仍然是市场领导者，但其市场份额在逐渐下降，尤其是面临Google和Microsoft的竞争。
+- **用户增长**：Perplexity和Claude AI等新兴平台的用户增长速度较快，显示出市场对多样化和专业化工具的需求。
+- **技术进步**：随着LLM技术的不断进步，未来的AI搜索引擎将更加注重准确性和用户体验。
+
+### 目前的技术栈（搜索流程）
+
+AI搜索引擎的搜索流程通常包括以下几个步骤：
+
+1. **用户查询**：用户输入查询请求。
+2. **查询解析**：对用户的查询进行解析，理解其意图。
+3. **信息检索**：从数据库或知识库中检索相关信息。
+4. **结果排序**：根据相关性和准确性对检索结果进行排序。
+5. **结果展示**：将排序后的结果展示给用户。
+
+### RAG Pipeline（检索增强生成）
+
+RAG（Retrieval-Augmented Generation）管道的详细步骤如下：
+
+1. **检索阶段**：
+   - 使用向量数据库（如FAISS）进行信息检索。
+   - 通过查询向量化，找到与用户查询最相关的文档。
+
+2. **生成阶段**：
+   - 将检索到的文档与用户查询一起输入到生成模型（如GPT-4）。
+   - 生成基于检索结果的回答。
+
+3. **后处理阶段**：
+   - 对生成的回答进行过滤和优化，确保其准确性和流畅性。
+
+### 算力需求报告
+
+- **ChatGPT**：需要高性能的GPU集群，支持大规模并发用户请求。
+- **Google Gemini**：同样需要强大的计算资源，尤其是在处理复杂查询时。
+- **Perplexity**：由于其专注于准确性，可能需要更多的计算资源来优化检索和生成过程。
+- **Claude AI**：作为商业导向的AI助手，算力需求与其功能复杂性直接相关。
+
+总体来看，AI搜索引擎的市场正在快速发展，竞争日益激烈，技术进步和用户需求将推动未来的创新和变革。
+---
+url: https://searchengineland.com/chatgpt-search-market-share-1-percent-449378
+summary: ### AI搜索引擎市场分析
+
+根据最新的市场数据，AI搜索引擎的市场份额正在快速变化。以下是对主要AI搜索引擎的市场份额分析：
+
+1. **谷歌**：依然是市场的绝对领导者，拥有92.4%的推荐流量。谷歌的强大生态系统和用户基础使其在搜索引擎市场中占据主导地位。
+
+2. **微软必应（Bing）**：市场份额为4.2%。尽管相较于谷歌仍然较小，但必应在不断努力提升其市场地位。
+
+3. **ChatGPT**：根据BrightEdge的分析，ChatGPT的搜索市场份额预计在2025年将达到1%。目前，ChatGPT的流量增长显著，较上月增长了44%。与Perplexity相比，ChatGPT的规模是其6倍。
+
+4. **Perplexity.ai**：虽然具体市场份额未明确，但其流量增长率为71%，显示出其在用户中的逐渐受欢迎程度。
+
+5. **市场份额的混淆**：有分析师曾估计ChatGPT的市场份额为4.33%，但这一数据被认为不准确，因为并非所有的提示或聊天都可以视为“搜索”。
+
+### 未来趋势
+
+AI搜索引擎的未来趋势包括：
+- **用户接受度的提升**：随着ChatGPT等AI搜索工具的普及，用户对AI搜索的接受度将持续上升。
+- **技术的不断进步**：AI搜索引擎将继续利用更先进的自然语言处理技术，提升搜索结果的相关性和准确性。
+- **市场竞争加剧**：随着新兴AI搜索引擎的出现，市场竞争将更加激烈，促使现有平台不断创新。
+
+### 目前的技术栈（搜索流程及RAG管道）
+
+AI搜索引擎的技术栈通常包括以下几个关键组件：
+
+1. **数据收集**：通过爬虫技术收集网页数据。
+2. **数据处理**：使用自然语言处理（NLP）技术对数据进行清洗和预处理。
+3. **索引构建**：将处理后的数据构建索引，以便快速检索。
+4. **查询处理**：用户输入查询后，系统解析查询意图。
+5. **检索与排序**：根据用户查询，从索引中检索相关结果，并使用算法对结果进行排序。
+6. **结果展示**：将排序后的结果展示给用户。
+
+**RAG（Retrieval-Augmented Generation）管道**：
+- **检索阶段**：从知识库中检索相关信息。
+- **生成阶段**：基于检索到的信息生成自然语言响应。
+
+### 算力需求报告
+
+AI搜索引擎的算力需求主要取决于以下几个因素：
+- **数据规模**：处理和存储大量数据需要强大的计算资源。
+- **模型复杂性**：使用更复杂的深度学习模型（如大型语言模型）需要更多的GPU和内存。
+- **实时性要求**：实时搜索和响应用户查询需要高效的计算能力。
+
+总体而言，随着AI搜索引擎的不断发展，算力需求将持续增长，推动云计算和边缘计算技术的应用。
+---
+url: https://sparktoro.com/blog/is-google-losing-search-market-share/
+summary: ### AI搜索引擎市场分析
+
+根据Rand Fishkin在2024年10月7日的文章，谷歌在搜索广告市场的份额可能会在2025年首次降至50%以下。这一预测主要基于三大因素：TikTok的崛起、AI搜索引擎（如Perplexity）的增长，以及谷歌面临的反垄断压力。
+
+#### 市场份额分析
+1. **谷歌的市场份额**：
+   - 根据最新数据，谷歌在美国的市场份额接近90%，全球市场份额超过90%。
+   - 尽管有关于谷歌市场份额下降的讨论，但数据表明谷歌的搜索广告业务仍在增长。
+
+2. **AI搜索引擎的影响**：
+   - 尽管AI搜索引擎（如Perplexity和ChatGPT）正在增长，但目前使用这些AI搜索引擎的用户中，99%的人仍然使用谷歌。
+   - 数据显示，使用传统搜索引擎而不使用任何AI引擎的用户占比高达83%。
+
+3. **其他竞争者**：
+   - 亚马逊在搜索广告市场的份额正在增长，尽管其增长速度快于谷歌，但谷歌的广告收入仍在增加。
+   - 其他新兴平台（如Walmart、Instacart等）也在逐渐占据市场份额。
+
+#### 未来趋势
+- **AI搜索引擎的潜力**：
+  - 尽管AI搜索引擎的用户增长显著，但目前的使用频率仍然较低，用户每月在这些平台上的搜索次数远低于谷歌。
+  - 如果AI搜索引擎继续以当前速度增长，可能在未来十年内对谷歌构成挑战。
+
+- **市场动态**：
+  - 随着数字广告支出的变化，谷歌可能会面临来自新兴平台的竞争，但整体市场仍在增长。
+
+### 目前的技术栈（搜索流程及RAG管道）
+1. **搜索流程**：
+   - 用户输入查询 → 系统解析查询 → 数据检索 → 结果排序 → 返回结果给用户。
+
+2. **RAG（Retrieval-Augmented Generation）管道**：
+   - **检索阶段**：从数据库中检索相关文档。
+   - **生成阶段**：使用生成模型（如GPT）基于检索到的文档生成答案。
+   - **后处理阶段**：对生成的答案进行优化和格式化，以提高用户体验。
+
+### 算力需求报告
+- **算力需求**：
+  - AI搜索引擎的算力需求主要取决于模型的复杂性和用户查询的数量。
+  - 例如，使用大型语言模型（如GPT-4）进行生成时，可能需要高性能的GPU集群来处理并发请求。
+
+### 结论
+尽管AI搜索引擎正在崛起，但谷歌在搜索市场的主导地位依然稳固。未来，随着技术的进步和用户习惯的变化，AI搜索引擎可能会逐渐占据更大的市场份额，但目前的数据显示，谷歌仍然是市场的领导者。
+
+### Requirements
+Please provide a detailed research report in response to the following topic: "帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。", using the information provided above. The report must meet the following requirements:
+
+- Focus on directly addressing the chosen topic.
+- Ensure a well-structured and in-depth presentation, incorporating relevant facts and figures where available.
+- Present data and findings in an intuitive manner, utilizing feature comparative tables, if applicable.
+- The report should have a minimum word count of 2,000 and be formatted with Markdown syntax following APA style guidelines.
+- Include all source URLs in APA format at the end of the report.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Toal number of times LLM called: 21

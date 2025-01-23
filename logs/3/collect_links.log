@@ -1,0 +1,33 @@
+====================
+----------
+Keywords generation time: 1.23 seconds
+Topic: tensorflow vs. pytorch
+Keywords: ```json
+["tensorflow", "pytorch"]
+```
+----------
+----------
+Search time: 0.35 seconds
+Search results: [[{'title': 'TensorFlow', 'link': 'https://www.tensorflow.org/', 'snippet': "An end-to-end open source machine learning platform for everyone. Discover TensorFlow's flexible ecosystem of tools, libraries and community resources."}, {'title': 'tensorflow ¡¤ GitHub', 'link': 'https://github.com/tensorflow', 'snippet': 'The TensorFlow Cloud repository provides APIs that will allow to easily go from debugging and training your Keras and TensorFlow code in a local environment to ...'}, {'title': 'TensorFlow', 'link': 'https://en.wikipedia.org/wiki/TensorFlow', 'snippet': 'TensorFlow is a software library for machine learning and artificial intelligence. It can be used across a range of tasks, but is used mainly for training ...'}, {'title': 'An Open Source Machine Learning Framework for Everyone', 'link': 'https://github.com/tensorflow/tensorflow', 'snippet': 'TensorFlow is an end-to-end open source platform for machine learning. It has a comprehensive, flexible ecosystem of tools, libraries, and community resources.'}], [{'title': 'PyTorch', 'link': 'https://pytorch.org/', 'snippet': 'A rich ecosystem of tools and libraries extends PyTorch and supports development in computer vision, NLP and more.'}, {'title': 'PyTorch', 'link': 'https://en.wikipedia.org/wiki/PyTorch', 'snippet': 'PyTorch is a machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, ...'}, {'title': 'pytorch/pytorch: Tensors and Dynamic neural networks in ...', 'link': 'https://github.com/pytorch/pytorch', 'snippet': 'PyTorch is a Python package that provides two high-level features: Tensor computation (like NumPy) with strong GPU acceleration; Deep neural networks built ...'}, {'title': 'What is PyTorch? | Data Science', 'link': 'https://www.nvidia.com/en-us/glossary/pytorch/', 'snippet': 'PyTorch is a fully featured framework for building deep learning models, which is a type of machine learning.'}]]
+----------
+----------
+Query optimization time: 0.82 seconds
+Queries: ```json
+["comparison of tensorflow and pytorch", "tensorflow vs pytorch for deep learning", "advantages of using tensorflow over pytorch", "pytorch vs tensorflow performance benchmarks"]
+```
+----------
+----------
+Search and rank item 0 time: 0.55 seconds
+Results: ['https://builtin.com/data-science/pytorch-vs-tensorflow', 'https://viso.ai/deep-learning/pytorch-vs-tensorflow/', 'https://www.geeksforgeeks.org/difference-between-pytorch-and-tensorflow/', 'https://opencv.org/blog/pytorch-vs-tensorflow/']
+---
+Search and rank item 1 time: 2.18 seconds
+Results: ['https://builtin.com/data-science/pytorch-vs-tensorflow', 'https://www.assemblyai.com/blog/pytorch-vs-tensorflow-in-2023/', 'https://viso.ai/deep-learning/pytorch-vs-tensorflow/', 'https://www.simplilearn.com/keras-vs-tensorflow-vs-pytorch-article']
+---
+Search and rank item 2 time: 2.84 seconds
+Results: ['https://viso.ai/deep-learning/pytorch-vs-tensorflow/', 'https://builtin.com/data-science/pytorch-vs-tensorflow', 'https://www.assemblyai.com/blog/pytorch-vs-tensorflow-in-2023/', 'https://www.reddit.com/r/MLQuestions/comments/112sege/pytorch_vs_tensorflow/']
+---
+Search and rank item 3 time: 2.06 seconds
+Results: ['https://viso.ai/deep-learning/pytorch-vs-tensorflow/', 'https://www.upgrad.com/blog/tensorflow-vs-pytorch-comparison/', 'https://rafay.co/the-kubernetes-current/pytorch-vs-tensorflow-a-comprehensive-comparison/', 'https://opencv.org/blog/pytorch-vs-tensorflow/']
+---
+---
+Total search and rank time: 7.62 seconds
