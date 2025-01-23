@@ -136,7 +136,11 @@ class BaseLLM(ABC):
         timeout=USE_CONFIG_TIMEOUT,
         stream=None,
     ) -> str:
-        with open(os.path.join(LOG_PATH, "llm_call.log"), "a", encoding="utf-8") as f:
+        # get the max number of folders in the logs directory
+        logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+        # write the logs to the max number folder
+        log_dir = str(max(logs_dirs))
+        with open(os.path.join(LOG_PATH, log_dir, "llm_call.log"), "a", encoding="utf-8") as f:
             f.write(f"{'*'*30}\n")
             f.write(f"[Query]\n")
             f.write(f"{msg}\n")

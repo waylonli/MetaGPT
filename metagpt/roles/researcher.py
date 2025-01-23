@@ -7,6 +7,8 @@
 
 import asyncio
 import re
+import os
+import time
 
 from pydantic import BaseModel
 
@@ -16,8 +18,7 @@ from metagpt.const import RESEARCH_PATH, LOG_PATH
 from metagpt.logs import logger
 from metagpt.roles.role import Role, RoleReactMode
 from metagpt.schema import Message
-import time
-import os
+
 
 class Report(BaseModel):
     topic: str
@@ -105,7 +106,13 @@ class Researcher(Role):
         msg = await super().react()
         report = msg.instruct_content
         self.research_end_time = time.time()
-        with open(os.path.join("logs", "researcher_system.log"), "a") as f:
+        # get the max number of folders in the logs directory
+        logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+        # write the logs to the max number folder
+        log_dir = str(max(logs_dirs))
+
+        # FileNotFoundError: [Errno 2] No such file or directory: 'logs\\5\\researcher_system.log'
+        with open(os.path.join(LOG_PATH, log_dir, "researcher_system.log"), "a") as f:
             f.write(f"{'-'*20}\n")
             f.write(f"Time to first token: {self.ttft - self.research_start_time:.2f} seconds\n")
             f.write(f"Time spent on report generation: {self.research_end_time - self.ttft:.2f} seconds\n")
@@ -127,21 +134,26 @@ class Researcher(Role):
 if __name__ == "__main__":
     import fire
 
-    # empty al the logs file under the logs folder
-    all_logs = os.listdir(os.path.join(LOG_PATH))
-    for log in all_logs:
-        if log.endswith(".log") or log.endswith(".txt"):
-            with open(os.path.join(LOG_PATH, log), "w") as f:
-                f.write("")
-    
+    # get the max number of folders in the logs directory
+    logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+    # write the logs to the max number folder
+    log_dir = str(max(logs_dirs))
+
     async def main(topic: str, language: str = "en-us", enable_concurrency: bool = True):
         role = Researcher(language=language, enable_concurrency=enable_concurrency)
+        # create a f"{topic}.txt" file to store the topic
+        with open(os.path.join(LOG_PATH, log_dir, "topic.txt"), "w", encoding="utf-8") as f:
+            f.write(topic)
         await role.run(topic)
 
     fire.Fire(main)
 
     # after finish add to the end of the llm_call.log file to count the number of occurrences of ****************************** to get the number of times LLM is called
-    with open(os.path.join(LOG_PATH, "llm_call.log"), "a") as f:
+    with open(os.path.join(LOG_PATH, log_dir, "llm_call.log"), "r", encoding="utf-8") as f:
         text = f.read()
         count = text.count("*" * 30)
+    f.close()
+
+    with open(os.path.join(LOG_PATH, log_dir, "llm_call.log"), "a", encoding="utf-8") as f:
         f.write(f"Toal number of times LLM called: {count}\n")
+    f.close()

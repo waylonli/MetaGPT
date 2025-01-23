@@ -49,7 +49,12 @@ class SerpAPIWrapper(BaseModel):
         """Run query through SerpAPI and parse result async."""
         result = await self.results(query, max_results)
         end = time.time()
-        with open(os.path.join(LOG_PATH, "search_engine_serpapi.log"), "a") as f:
+        # get the max number of folders in the logs directory
+        logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+        # write the logs to the max number folder
+        log_dir = str(max(logs_dirs))
+
+        with open(os.path.join(LOG_PATH, log_dir, "search_engine_serpapi.log"), "a") as f:
             # use a separator to separate the time and the number of urls
             f.write(f"{'-'*20}\n")
             f.write(f"{end - start:.2f} seconds\n")

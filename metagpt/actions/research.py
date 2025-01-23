@@ -115,7 +115,11 @@ class CollectLinks(Action):
         keyword_start_time = time.time()
         keywords = await self._aask(SEARCH_TOPIC_PROMPT, [system_text])
         keyword_end_time = time.time()
-        f = open(os.path.join(LOG_PATH, "collect_links.log"), "a")
+        # get the max number of folders in the logs directory
+        logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+        # write the logs to the max number folder
+        log_dir = str(max(logs_dirs))
+        f = open(os.path.join(LOG_PATH, log_dir, "collect_links.log"), "a")
         f.write(f"{'='*20}\n")
         f.write(f"{'-'*10}\n")
         f.write(f"Keywords generation time: {keyword_end_time - keyword_start_time:.2f} seconds\n")
@@ -287,7 +291,11 @@ class WebBrowseAndSummarize(Action):
             summary = await self._aask(prompt, [system_text])
             summaries[u] = summary
         end = time.time()
-        with open(os.path.join(LOG_PATH, "web_browse_and_summarize.log"), "a") as f:
+        # get the max number of folders in the logs directory
+        logs_dirs = [int(x.name) for x in LOG_PATH.glob("*") if x.is_dir()]
+        # write the logs to the max number folder
+        log_dir = str(max(logs_dirs))
+        with open(os.path.join(LOG_PATH, log_dir, "web_browse_and_summarize.log"), "a") as f:
             f.write(f"{'-'*20}\n")
             f.write(f"{end - start:.2f} seconds\n")
             f.write(f"Query: {query}\n")

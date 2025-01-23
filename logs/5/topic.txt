@@ -1,0 +1,1 @@
+帮我创建一份AI搜索引擎的市场分析、未来趋势、目前的技术栈（搜索流程，包含详细的RAG pipeline），以及算力需求报告。要求其中包含谷歌、perplexity.ai、OpenAI SearchingGPT，字节豆包的详细分析。
